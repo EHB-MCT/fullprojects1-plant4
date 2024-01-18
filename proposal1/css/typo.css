@@ -2,6 +2,7 @@
 @import url("https://use.typekit.net/zkt1fja.css");
 @import url("https://use.typekit.net/zkt1fja.css");
 @import url("https://use.typekit.net/zkt1fja.css");
+@import url("https://use.typekit.net/lxo0svz.css");
 
 h1 {
 	font-family: "expo-serif-pro", serif;
@@ -28,6 +29,11 @@ h3 {
 }
 
 h4 {
+	font-family: "antiquarian-scribe", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20pt;
+	color: #000000;
 }
 
 h5 {
