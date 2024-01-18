@@ -4,22 +4,22 @@
 	font-family: "forma-djr-text", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 15pt;
-	color: #f3dfc1;
+	font-size: 24pt;
+	color: white;
 	padding: 10px;
-	background-color: #8c0404;
+	background-color: #459a50;
 	border-radius: 20px;
 	text-decoration: none;
 }
 
 .btn-secondary {
-	font-family: "forma-djr-text", sans-serif;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 15pt;
-	color: #f3dfc1;
+	font-size: 24pt;
+	color: white;
 	padding: 10px;
-	background-color: #8c0404;
+	background-color: #459a50;
 	border-radius: 20px;
 	text-decoration: none;
 }

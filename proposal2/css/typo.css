@@ -1,8 +1,4 @@
 @import url("https://use.typekit.net/zkt1fja.css");
-@import url("https://use.typekit.net/zkt1fja.css");
-@import url("https://use.typekit.net/zkt1fja.css");
-@import url("https://use.typekit.net/zkt1fja.css");
-
 h1 {
 	font-family: "expo-serif-pro", serif;
 	font-weight: 600;
@@ -12,9 +8,9 @@ h1 {
 }
 
 h2 {
-	font-family: "expo-serif-pro", serif;
-	font-weight: 600;
-	font-size: 40pt;
+	font-family: "mr-eaves-xl-modern", sans-serif;
+	font-weight: 100;
+	font-size: 45pt;
 	font-style: normal;
 	color: #000;
 }
@@ -24,7 +20,7 @@ h3 {
 	font-weight: 600;
 	font-style: italic;
 	font-size: 35pt;
-	color: #4d4d4d;
+	color: #000;
 }
 
 h4 {
@@ -37,11 +33,11 @@ h6 {
 }
 
 p {
-	font-family: "forma-djr-text", sans-serif;
-	font-weight: 400;
+	font-family: "mr-eaves-xl-modern", sans-serif;
+	font-weight: 100;
 	font-style: normal;
-	font-size: 15pt;
-	color: #4d4d4d;
+	font-size: 26pt;
+	color: #000;
 }
 
 a {
@@ -49,6 +45,7 @@ a {
 	font-weight: 700;
 	font-style: normal;
 	font-size: 15pt;
-	color: #8c0404;
+	color: black;
+	border-bottom: 6px solid green;
 	text-decoration: none;
 }
