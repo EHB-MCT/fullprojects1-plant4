@@ -5,11 +5,38 @@ body {
 	background-image: url(../images/Artboard\ 1\ copy\ 3-8.png);
 }
 
+.wrapper {
+	width: 90%;
+	margin-left: 5%;
+}
+
+/* HOME PAGE */
+
+.intro .text {
+	text-align: center;
+}
+
 .logo {
 	width: fit-content;
 }
+@media (max-width: 768px) {
+	#title {
+		display: none;
+	}
+}
 
-.wrapper {
-	width: 80%;
-	margin-left: 10%;
+@media (min-width: 768px) {
+	.intro .text {
+		text-align: left;
+		width: 50%;
+	}
+	.logo {
+		display: none;
+	}
+	header nav {
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+		margin-top: 15px;
+	}
 }
