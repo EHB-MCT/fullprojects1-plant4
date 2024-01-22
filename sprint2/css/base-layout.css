@@ -10,7 +10,8 @@ body {
 	margin-left: 5%;
 }
 
-/* HOME PAGE */
+/* HOME PAGE*/
+/* HOME PAGE --> HEADER*/
 header .logo {
 	width: fit-content;
 	display: flex;
@@ -20,6 +21,7 @@ header .logo a {
 	justify-self: flex-start;
 }
 
+/* HOME PAGE --> INTRO TEXT*/
 .intro {
 	display: flex;
 	justify-content: center;
@@ -37,6 +39,7 @@ header .logo a {
 	text-align: center;
 }
 
+/* HOME PAGE --> IMAGE COREVALUES*/
 .corevalues {
 	margin-top: 30px;
 }
@@ -44,12 +47,12 @@ header .logo a {
 	width: 100%;
 }
 
+/* HOME PAGE --> RESPONSIVE DESIGN*/
 @media (max-width: 768px) {
 	#title {
 		display: none;
 	}
 }
-
 @media (min-width: 768px) {
 	#title {
 		margin-bottom: 0;
@@ -78,7 +81,6 @@ header .logo a {
 		margin-top: 0;
 	}
 }
-
 @media (min-width: 1200px) {
 	.wrapper {
 		width: 1200px;
