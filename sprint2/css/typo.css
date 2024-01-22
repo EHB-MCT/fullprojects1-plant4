@@ -52,3 +52,11 @@ a {
 	color: #8c0404;
 	text-decoration: none;
 }
+
+.logo a {
+	font-family: "expo-serif-pro", serif;
+	font-weight: 600;
+	font-size: 34pt;
+	font-style: normal;
+	color: #000;
+}
