@@ -13,7 +13,7 @@ nav #myLinks {
 }
 
 /* Style navigation menu links */
-nav a {
+nav .hamburger a {
 	font-family: "forma-djr-text", sans-serif;
 	font-weight: 700;
 	font-style: normal;
@@ -39,4 +39,19 @@ nav a.icon {
 
 /* Add a grey background color on mouse-over */
 nav a:hover {
+}
+
+@media screen and (max-width: 768px) {
+	.gewonenav {
+		display: none;
+	}
+	header {
+		display: flex;
+		flex-direction: row;
+	}
+}
+@media screen and (min-width: 768px) {
+	.hamburger {
+		display: none;
+	}
 }
