@@ -4,7 +4,11 @@ body {
 	margin: 0;
 	background-image: url(../images/Artboard\ 1\ copy\ 3-8.png);
 }
-
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 .logo {
 	width: fit-content;
 }
