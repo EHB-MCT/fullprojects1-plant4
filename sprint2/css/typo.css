@@ -1,0 +1,54 @@
+@import url("https://use.typekit.net/zkt1fja.css");
+@import url("https://use.typekit.net/zkt1fja.css");
+@import url("https://use.typekit.net/zkt1fja.css");
+@import url("https://use.typekit.net/zkt1fja.css");
+@import url("https://use.typekit.net/lxo0svz.css");
+
+h1 {
+	font-family: "expo-serif-pro", serif;
+	font-weight: 600;
+	font-size: 90pt;
+	font-style: normal;
+	color: #000;
+}
+
+h2 {
+	font-family: "expo-serif-pro", serif;
+	font-weight: 600;
+	font-size: 40pt;
+	font-style: normal;
+	color: #000;
+}
+
+h3 {
+	font-family: "expo-serif-pro", serif;
+	font-weight: 600;
+	font-style: italic;
+	font-size: 35pt;
+	color: #4d4d4d;
+}
+
+h4 {
+	font-family: "antiquarian-scribe", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20pt;
+	color: #000000;
+}
+
+p {
+	font-family: "forma-djr-text", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 15pt;
+	color: #4d4d4d;
+}
+
+a {
+	font-family: "forma-djr-text", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 15pt;
+	color: #8c0404;
+	text-decoration: none;
+}
