@@ -38,7 +38,8 @@ nav a.icon {
 	display: block;
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: -1px;
+	font-size: 25px;
 }
 
 #onpage {
