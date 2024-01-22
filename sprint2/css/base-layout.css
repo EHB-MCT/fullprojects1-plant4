@@ -11,16 +11,38 @@ body {
 }
 
 /* HOME PAGE */
+.logo {
+	width: fit-content;
+}
 
+.intro {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.intro .image {
+	display: flex;
+	justify-content: center;
+}
+.intro .image img {
+	width: 70%;
+}
 .intro .text {
 	text-align: center;
 }
 
-.logo {
-	width: fit-content;
+.corevalues {
+	margin-top: 30px;
 }
+.corevalues img {
+	width: 100%;
+}
+
 @media (max-width: 768px) {
 	#title {
+		display: none;
+	}
+	.intro .image {
 		display: none;
 	}
 }
