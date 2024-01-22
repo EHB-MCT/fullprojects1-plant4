@@ -24,6 +24,13 @@ nav .hamburger a {
 	text-decoration: none;
 	display: block;
 }
+.gewonenav a {
+	font-family: "forma-djr-text", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 12pt;
+	color: #000000;
+}
 
 /* Style the hamburger menu */
 nav a.icon {
@@ -45,13 +52,15 @@ nav a:hover {
 	.gewonenav {
 		display: none;
 	}
-	header {
-		display: flex;
-		flex-direction: row;
-	}
 }
 @media screen and (min-width: 768px) {
 	.hamburger {
 		display: none;
+	}
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: row;
 	}
 }
