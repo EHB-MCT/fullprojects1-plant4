@@ -37,7 +37,7 @@ nav .hamburger a {
 nav a.icon {
 	display: block;
 	position: absolute;
-	right: 5%;
+	right: 2.5%;
 	top: -1px;
 	font-size: 25px;
 }
@@ -50,7 +50,7 @@ nav a.icon {
 nav a:hover {
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.gewonenav {
 		display: none;
 	}
