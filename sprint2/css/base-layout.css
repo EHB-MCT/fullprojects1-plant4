@@ -10,7 +10,7 @@ body {
 	margin-left: 5%;
 }
 
-/* HOME PAGE*/
+/* HOME PAGE */
 /* HOME PAGE --> HEADER*/
 header .logo {
 	width: fit-content;
@@ -89,5 +89,34 @@ header .logo a {
 	.outer-wrapper {
 		display: flex;
 		justify-content: center;
+	}
+}
+
+/* GEERT AUSLOOS */
+
+.gert-info {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column-reverse;
+}
+
+.gert-info .text {
+	text-align: center;
+	flex: 1;
+}
+.gert-info .image {
+	display: flex;
+	justify-content: center;
+	flex: 1;
+}
+
+@media (min-width: 768px) {
+	.gert-info {
+		flex-direction: row;
+	}
+	.gert-info .text {
+		text-align: left;
 	}
 }
