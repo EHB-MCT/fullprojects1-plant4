@@ -10,6 +10,7 @@
 	background-color: #1c632a;
 	border-radius: 12px;
 	text-decoration: none;
+	display: inline-block;
 }
 
 .btn-secondary {
