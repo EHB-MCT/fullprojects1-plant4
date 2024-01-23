@@ -226,3 +226,15 @@ header .logo a {
 	margin-left: 500px;
 	margin-top: 50px;
 }
+
+.jump {
+	display: flex;
+	flex-direction: row;
+	margin-top: 15px;
+	justify-content: center;
+}
+
+.jumplink {
+	margin: 25px;
+	color: black;
+}
