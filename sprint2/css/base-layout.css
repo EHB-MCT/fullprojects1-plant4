@@ -26,6 +26,7 @@ header .logo a {
 	margin-top: 100px;
 	background-color: transparent;
 	cursor: pointer;
+	padding: 18px;
 	width: 100%;
 	text-align: left;
 	border-bottom: 5px solid gray;
@@ -56,10 +57,11 @@ header .logo a {
 
 .accordion:after {
 	content: "\02795"; /* Unicode character for "plus" sign (+) */
-	font-size: 13px;
+	font-size: 25px;
 	color: #777;
 	float: right;
 	margin-left: 5px;
+	margin-bottom: 20px;
 }
 
 .active:after {
