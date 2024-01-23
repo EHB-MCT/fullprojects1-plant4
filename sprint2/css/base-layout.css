@@ -245,3 +245,8 @@ header .logo a {
 html {
 	scroll-behavior: smooth;
 }
+
+.wholelist {
+	display: flex;
+	flex-direction: row;
+}
