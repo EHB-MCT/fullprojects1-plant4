@@ -249,4 +249,13 @@ html {
 .wholelist {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
+}
+
+.person {
+	font-weight: bold;
+}
+
+.job {
+	margin-bottom: 5px;
 }
