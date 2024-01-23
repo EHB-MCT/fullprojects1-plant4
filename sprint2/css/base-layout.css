@@ -154,10 +154,6 @@ header .logo a {
 	display: flex;
 	flex-direction: row;
 }
-.seed {
-	display: flex;
-	flex-direction: row;
-}
 
 /* 2de image gert ausloos*/
 .plantblindheid img {
@@ -216,7 +212,7 @@ header .logo a {
 .accordion:after {
 	content: "\02795"; /* Unicode character for "plus" sign (+) */
 	font-size: 25px;
-	color: #777;
+	color: #1c632a;
 	float: right;
 	margin-left: 5px;
 	margin-bottom: 20px;
