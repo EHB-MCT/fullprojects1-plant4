@@ -111,12 +111,18 @@ header .logo a {
 .organisatie .text,
 .kernwaarden .text {
 	flex: 1;
+	text-align: justify;
 }
 .organisatie .image,
 .kernwaarden .image {
 	flex: 1;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
+}
+.kernwaarden .image2 {
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
 }
 
 @media (min-width: 768px) {
