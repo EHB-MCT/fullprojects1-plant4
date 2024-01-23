@@ -159,6 +159,16 @@ header .logo a {
 	flex-direction: row;
 }
 
+/* 2de image gert ausloos*/
+.plantblindheid img {
+	width: 270px;
+	margin-top: 20px;
+}
+.plantblindheid {
+	display: flex;
+	flex-direction: row;
+}
+
 @media (min-width: 768px) {
 	.gert-info {
 		flex-direction: row;
@@ -173,7 +183,7 @@ header .logo a {
 	margin-top: 100px;
 	background-color: transparent;
 	cursor: pointer;
-	padding: 18px;
+	padding: 1px;
 	width: 100%;
 	text-align: left;
 	border-bottom: 5px solid gray;
@@ -188,14 +198,19 @@ header .logo a {
 .active,
 .accordion:hover {
 	background-color: #ccc;
+	border-radius: 10px;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
+	margin-top: 50px;
 	padding: 0 18px;
-	background-color: white;
-	display: none;
+	display: flex;
 	overflow: hidden;
+}
+
+.accordion p {
+	margin-bottom: -30px;
 }
 
 .accordion:after {
@@ -209,4 +224,9 @@ header .logo a {
 
 .active:after {
 	content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.download {
+	margin-left: 500px;
+	margin-top: 50px;
 }
