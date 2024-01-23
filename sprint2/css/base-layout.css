@@ -178,6 +178,7 @@ header .logo a {
 .accordion {
 	margin-top: 100px;
 	background-color: transparent;
+	color: #444;
 	cursor: pointer;
 	padding: 1px;
 	width: 100%;
@@ -211,16 +212,17 @@ header .logo a {
 }
 
 .accordion:after {
-	content: "\02795"; /* Unicode character for "plus" sign (+) */
-	font-size: 25px;
-	color: #1c632a;
+	content: "+"; /* Unicode character for "plus" sign (+) */
+	font-size: 50px;
+	color: green !important;
 	float: right;
 	margin-left: 5px;
 	margin-bottom: 20px;
 }
 
 .active:after {
-	content: "\2796"; /* Unicode character for "minus" sign (-) */
+	content: "-"; /* Unicode character for "minus" sign (-) */
+	font-size: 50px;
 }
 
 .download {
