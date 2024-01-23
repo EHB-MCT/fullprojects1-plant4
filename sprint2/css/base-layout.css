@@ -242,3 +242,6 @@ header .logo a {
 	color: black;
 	font-size: 12pt;
 }
+html {
+	scroll-behavior: smooth;
+}
