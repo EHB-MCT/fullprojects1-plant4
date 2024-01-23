@@ -13,6 +13,15 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
+		<style>
+			.panel {
+				padding: 0 18px;
+				background-color: transparent;
+				max-height: 0;
+				overflow: hidden;
+				transition: max-height 0.2s ease-out;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="outer-wrapper">
@@ -56,7 +65,7 @@
 						}
 					</script>
 				</header>
-				<button class="accordion">Section 1</button>
+				<button class="accordion"><p>Section 1</p></button>
 				<div class="panel">
 					<p>Lorem ipsum...</p>
 				</div>
@@ -107,15 +116,6 @@
 						});
 					}
 				</script>
-				<style>
-					.panel {
-						padding: 0 18px;
-						background-color: transparent;
-						max-height: 0;
-						overflow: hidden;
-						transition: max-height 0.2s ease-out;
-					}
-				</style>
 			</div>
 		</div>
 	</body>
