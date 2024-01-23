@@ -145,6 +145,15 @@ header .logo a {
 	justify-content: center;
 	flex: 1;
 }
+/* 2de image gert ausloos*/
+.plantblindheid img {
+	width: 270px;
+	margin-top: 20px;
+}
+.plantblindheid {
+	display: flex;
+	flex-direction: row;
+}
 
 @media (min-width: 768px) {
 	.gert-info {
