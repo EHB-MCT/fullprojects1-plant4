@@ -194,13 +194,14 @@ header .logo a {
 .active,
 .accordion:hover {
 	background-color: #ccc;
+	border-radius: 10px;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
 	margin-top: 50px;
 	padding: 0 18px;
-	display: none;
+	display: flex;
 	overflow: hidden;
 }
 
@@ -222,5 +223,6 @@ header .logo a {
 }
 
 .download {
-	display: flex;
+	margin-left: 500px;
+	margin-top: 50px;
 }
