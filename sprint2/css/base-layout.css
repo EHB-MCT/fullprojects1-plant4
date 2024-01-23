@@ -232,11 +232,13 @@ header .logo a {
 .jump {
 	display: flex;
 	flex-direction: row;
-	margin-top: 15px;
+	margin-top: 5px;
 	justify-content: center;
 }
 
 .jumplink {
 	margin: 25px;
+	margin-bottom: 0px;
 	color: black;
+	font-size: 12pt;
 }
