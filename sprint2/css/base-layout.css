@@ -223,10 +223,10 @@ header .logo a {
 }
 
 .download {
-	margin-left: 500px;
-	margin-top: 50px;
+}
 
-	height: 100px;
+.center {
+	text-align: center;
 }
 
 .jump {
