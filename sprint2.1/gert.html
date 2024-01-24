@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gert Ausloos</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/base-layout.css" />
+		<link rel="stylesheet" href="css/nav.css" />
+		<link rel="stylesheet" href="css/typo.css" />
+		<link rel="stylesheet" href="css/buttons.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
+	<body>
+		<div class="outer-wrapper">
+			<div class="wrapper">
+				<header>
+					<div class="logo">
+						<a href="home.html">PLANTBEWUST</a>
+					</div>
+					<!-- Top Navigation Menu -->
+					<nav>
+						<div class="hamburger">
+							<!-- Navigation links (hidden by default) -->
+							<div id="myLinks">
+								<a href="home.html">Home</a>
+								<a href="over.html">Over ons</a>
+								<a id="onpage" href="gert.html">Gert Ausloos</a>
+								<a href="verslagen.html">Verslagen</a>
+							</div>
+							<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+							<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+								<i class="fa fa-bars"></i>
+							</a>
+						</div>
+						<div class="gewonenav">
+							<a href="home.html">Home</a>
+							<a href="over.html">Over ons</a>
+							<a id="onpage" href="gert.html">Gert Ausloos</a>
+							<a href="verslagen.html">Verslagen</a>
+						</div>
+					</nav>
+
+					<script>
+						/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+						function myFunction() {
+							var x = document.getElementById("myLinks");
+							if (x.style.display === "block") {
+								x.style.display = "none";
+							} else {
+								x.style.display = "block";
+							}
+						}
+					</script>
+				</header>
+				<div class="gert">
+					<div class="item">
+						<div class="text">
+							<h2>Gert Ausloos</h2>
+							<p>
+								Gert Ausloos, doctor in de Wetenschappen, begon in 1997 te
+								werken in de toenmalige Nationale Plantentuin van Belgié. Hij
+								stond aan de basis van de dienst SEED (Service Educatif/
+								Educatieve Dienst), die zich naast educatie bezighoudt met
+								communicatie en toerisme. Hij slaagde er zo in om de Plantentuin
+								bij het grote publiek en in de media bekend te maken.
+							</p>
+						</div>
+						<div class="image">
+							<img src="images/gert_ausloos_4.png" alt="Gert Ausloos" />
+						</div>
+					</div>
+					<div class="item">
+						<div class="image2">
+							<img src="images/gert_ausloos_3.png" alt="Gert Ausloos" />
+						</div>
+						<div class="text">
+							<h2>Plantblindheid</h2>
+							<p>
+								Gert streed tegen wat hij « plantblindheid » noemde (het
+								achteloos voobijgaan van planten). Hijovertuigde door zijn
+								passie voor planten dat planten geen décor zijn maar een
+								organisme zijn die essentiëlen rol spelen in ons dagelijks
+								leven.<br />“Plantblindheid, of beter, de strijd er tegen, was
+								een van de zaken die Gert dreef in zijn werk als directeur
+								publiekswerking van de Plantentuin Meise. Die strijd op een zo
+								goed mogelijke manier voortzetten is een goede manier om hem te
+								herdenken, en zijn gedachtengoed levend te houden.”
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

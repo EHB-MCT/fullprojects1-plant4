@@ -1,0 +1,270 @@
+/* BASE LAYOUT FLEXBOX */
+
+body {
+	margin: 0;
+	background-image: url(../images/Artboard\ 1\ copy\ 3-8.png);
+}
+
+.wrapper {
+	width: 90%;
+	margin-left: 5%;
+}
+
+/* HOME PAGE */
+/* HOME PAGE --> HEADER*/
+header .logo {
+	width: fit-content;
+	display: flex;
+	justify-content: flex-start;
+}
+header .logo a {
+	justify-self: flex-start;
+}
+
+/* HOME PAGE --> INTRO TEXT*/
+.intro {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+.intro .image {
+	display: flex;
+	justify-content: flex-end;
+}
+.intro .image img {
+	width: 70%;
+}
+.intro .text {
+	text-align: center;
+}
+
+/* HOME PAGE --> IMAGE COREVALUES*/
+.corevalues {
+	margin-top: 30px;
+}
+.corevalues img {
+	width: 100%;
+}
+
+/* HOME PAGE --> RESPONSIVE DESIGN*/
+@media (max-width: 768px) {
+	#title {
+		display: none;
+	}
+}
+@media (min-width: 768px) {
+	#title {
+		margin-bottom: 0;
+	}
+	.logo {
+		display: none;
+	}
+	header nav {
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+		margin-top: 15px;
+	}
+}
+@media (min-width: 1000px) {
+	.intro .text {
+		text-align: left;
+		width: 50%;
+	}
+}
+@media (max-width: 1000px) {
+	.intro .image {
+		display: none;
+	}
+	.intro {
+		margin-top: 0;
+	}
+}
+@media (min-width: 1200px) {
+	.wrapper {
+		width: 1200px;
+		padding: 0 2.5%;
+	}
+	.outer-wrapper {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+/* OVER ONS */
+
+.organisatie,
+.item {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.organisatie img,
+.kernwaarden img {
+	width: 80%;
+}
+
+.organisatie .text,
+.kernwaarden .text {
+	flex: 1;
+	text-align: justify;
+}
+.organisatie .image,
+.kernwaarden .image {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+.kernwaarden .image2 {
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+	.organisatie,
+	.item {
+		flex-direction: row;
+	}
+}
+
+/* GEERT AUSLOOS */
+
+.gert {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+.gert .item {
+	display: flex;
+	align-items: center;
+}
+
+.gert .text {
+	text-align: center;
+	flex: 1;
+}
+.gert .text p {
+	text-align: justify;
+}
+.gert .image {
+	display: flex;
+	justify-content: flex-end;
+	flex: 1;
+}
+.gert .image2 {
+	display: flex;
+	justify-content: flex-start;
+	flex: 1;
+}
+.gert img {
+	width: 60%;
+}
+
+@media (min-width: 768px) {
+	.gert .item {
+		flex-direction: row;
+	}
+	.gert .item .text {
+		text-align: left;
+	}
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+	margin-top: 100px;
+	background-color: transparent;
+	cursor: pointer;
+	padding: 1px;
+	width: 50%;
+	text-align: left;
+	border-bottom: 5px solid gray;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	outline: none;
+	transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+	background-color: #ccc;
+	border-radius: 10px;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+	margin-top: 50px;
+	padding: 0 18px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	width: 50%;
+}
+.panel p {
+	text-align: justify;
+}
+
+.accordion p {
+	margin-bottom: -30px;
+}
+
+.accordion:after {
+	content: "+"; /* Unicode character for "plus" sign (+) */
+	font-size: 50px;
+	color: green !important;
+	float: right;
+	margin-left: 5px;
+	margin-bottom: 10px;
+}
+
+.active:after {
+	content: "-"; /* Unicode character for "minus" sign (-) */
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+
+.download {
+}
+
+.center {
+	text-align: center;
+}
+
+.jump {
+	display: flex;
+	flex-direction: row;
+	margin-top: 5px;
+	justify-content: center;
+}
+
+.jumplink {
+	margin: 25px;
+	margin-bottom: 0px;
+	color: black;
+	font-size: 12pt;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+.wholelist {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.person {
+	font-weight: bold;
+}
+
+.job {
+	margin-bottom: 5px;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Verslagen</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/base-layout.css" />
+		<link rel="stylesheet" href="css/nav.css" />
+		<link rel="stylesheet" href="css/typo.css" />
+		<link rel="stylesheet" href="css/buttons.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<style>
+			.panel {
+				padding: 0 18px;
+				background-color: transparent;
+				max-height: 0;
+				overflow: hidden;
+				transition: max-height 0.2s ease-out;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="outer-wrapper">
+			<div class="wrapper">
+				<header>
+					<div class="logo">
+						<a href="home.html">PLANTBEWUST</a>
+					</div>
+					<!-- Top Navigation Menu -->
+					<nav>
+						<div class="hamburger">
+							<!-- Navigation links (hidden by default) -->
+							<div id="myLinks">
+								<a href="home.html">Home</a>
+								<a href="over.html">Over ons</a>
+								<a href="gert.html">Gert Ausloos</a>
+								<a id="onpage" href="verslagen.html">Verslagen</a>
+							</div>
+							<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+							<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+								<i class="fa fa-bars"></i>
+							</a>
+						</div>
+						<div class="gewonenav">
+							<a href="home.html">Home</a>
+							<a href="over.html">Over ons</a>
+							<a href="gert.html">Gert Ausloos</a>
+							<a id="onpage" href="verslagen.html">Verslagen</a>
+						</div>
+					</nav>
+
+					<script>
+						/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+						function myFunction() {
+							var x = document.getElementById("myLinks");
+							if (x.style.display === "block") {
+								x.style.display = "none";
+							} else {
+								x.style.display = "block";
+							}
+						}
+					</script>
+				</header>
+				<button class="accordion"><p>Verslag 14 april</p></button>
+				<div class="panel">
+					<p>
+						In het debat wordt besproken hoe veredeling, ooit een verrijking
+						door en voor mensen, nu problemen met zich meebrengt door
+						industrialisatie. Monopolies en patenten leiden tot minder
+						diversiteit en eigendom door bedrijven. Snelle veredelingsmethoden
+						hebben onbekende langetermijneffecten. De discussie omvat ook de
+						relatie tussen gecultiveerde en wilde natuur, invasieve exoten en
+						klimaatverandering. De vraag rijst of planten muteren door toeval of
+						bewust reageren op menselijke voorkeuren. Het debat eindigt met
+						overwegingen over (gemeentelijke) initiatieven, rewilding, en het
+						delen van inzichten met het brede publiek, waarbij aandacht wordt
+						besteed aan de uitdagingen van systemisch denken en de groeiende
+						kennis van planten.
+					</p>
+
+					<div class="center">
+						<a
+							target="_blank"
+							class="btn-primary download"
+							href="PDF's/Verslag 25 november.pdf"
+							>Lees meer</a
+						>
+					</div>
+				</div>
+
+				<button class="accordion"><p>Verslag 25 november</p></button>
+				<div class="panel">
+					<p>
+						In Quentin Hiernaux's thought-provoking presentation, he delves into
+						the intersection of philosophy and science in his book, offering a
+						nuanced perspective on plant intelligence by redefining the concepts
+						of 'behavior' and 'cognition.' Hiernaux challenges the traditional
+						hierarchy of life that has viewed plants as the lowest form,
+						presenting a historical overview of evolving scientific perceptions.
+						The discussion explores contemporary research on plant cognition,
+						questioning the possibility of free will in plants and pondering
+						their potential sentience. Hiernaux advocates for diverse knowledge
+						systems, including non-Western traditions, and raises ethical
+						considerations, emphasizing the role of empathy in recognizing
+						plants as complex beings. The presentation encourages a reevaluation
+						of societal attitudes towards plants, suggesting that teaching
+						empathy, exploring ethical lifestyles, and embracing diverse
+						perspectives could be pivotal in fostering a more harmonious
+						relationship between humans and the plant world.
+					</p>
+					<div class="center">
+						<a
+							target="_blank"
+							class="btn-primary download"
+							href="PDF's/Verslag 25 november.pdf"
+							>Lees meer</a
+						>
+					</div>
+				</div>
+
+				<button class="accordion"><p>Section 3</p></button>
+				<div class="panel">
+					<p>Lorem ipsum...</p>
+					<div class="center">
+						<a
+							target="_blank"
+							class="btn-primary download"
+							href="PDF's/Verslag 25 november.pdf"
+							>Lees meer</a
+						>
+					</div>
+				</div>
+
+				<script>
+					var acc = document.getElementsByClassName("accordion");
+					var i;
+
+					for (i = 0; i < acc.length; i++) {
+						acc[i].addEventListener("click", function () {
+							this.classList.toggle("active");
+							var panel = this.nextElementSibling;
+							if (panel.style.maxHeight) {
+								panel.style.maxHeight = null;
+							} else {
+								panel.style.maxHeight = panel.scrollHeight + "px";
+							}
+						});
+					}
+				</script>
+			</div>
+		</div>
+	</body>
+</html>

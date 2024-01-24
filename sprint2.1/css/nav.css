@@ -1,0 +1,68 @@
+/* NAVIGATION */
+
+@import url("https://use.typekit.net/zkt1fja.css");
+
+/* Style the navigation menu */
+nav {
+	overflow: hidden;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+nav #myLinks {
+	display: none;
+}
+
+/* Style navigation menu links */
+nav .hamburger a {
+	font-family: "forma-djr-text", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 12pt;
+	color: #000000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	display: block;
+}
+.gewonenav a {
+	font-family: "forma-djr-text", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 12pt;
+	color: #000000;
+	margin-right: 25px;
+}
+
+/* Style the hamburger menu */
+nav a.icon {
+	display: block;
+	position: absolute;
+	right: 2.5%;
+	top: -1px;
+	font-size: 25px;
+}
+
+#onpage {
+	color: #1c632a;
+}
+
+/* Add a grey background color on mouse-over */
+nav a:hover {
+}
+
+@media screen and (max-width: 767px) {
+	.gewonenav {
+		display: none;
+	}
+}
+@media screen and (min-width: 768px) {
+	.hamburger {
+		display: none;
+	}
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+}
