@@ -207,6 +207,9 @@ header .logo a {
 	overflow: hidden;
 	width: 50%;
 }
+.panel p {
+	text-align: justify;
+}
 
 .accordion p {
 	margin-bottom: -30px;
