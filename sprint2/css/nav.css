@@ -65,4 +65,17 @@ nav a:hover {
 		justify-content: space-between;
 		flex-direction: row;
 	}
+	nav {
+		height: 100%;
+	}
+}
+
+/* HOME PAGE --> HEADER*/
+header .logo {
+	width: fit-content;
+	display: flex;
+	justify-content: flex-start;
+}
+header .logo a {
+	justify-self: flex-start;
 }

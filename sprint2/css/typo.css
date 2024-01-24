@@ -76,3 +76,7 @@ ul {
 .active:after {
 	font-family: "expo-serif-pro", serif;
 }
+
+#meer {
+	font-weight: 500;
+}

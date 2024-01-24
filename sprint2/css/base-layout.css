@@ -11,16 +11,6 @@ body {
 }
 
 /* HOME PAGE */
-/* HOME PAGE --> HEADER*/
-header .logo {
-	width: fit-content;
-	display: flex;
-	justify-content: flex-start;
-}
-header .logo a {
-	justify-self: flex-start;
-}
-
 /* HOME PAGE --> INTRO TEXT*/
 .intro {
 	display: flex;
@@ -60,11 +50,13 @@ header .logo a {
 	.logo {
 		display: none;
 	}
+	header {
+		margin-top: 10px;
+	}
 	header nav {
 		display: flex;
 		justify-content: flex-end;
 		width: 100%;
-		margin-top: 15px;
 	}
 }
 @media (min-width: 1000px) {
@@ -176,6 +168,8 @@ header .logo a {
 	}
 }
 
+/* VERSLAGEN ACCORDION MENU */
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
 	margin-top: 100px;
@@ -229,9 +223,6 @@ header .logo a {
 	content: "-"; /* Unicode character for "minus" sign (-) */
 	font-size: 50px;
 	margin-bottom: 10px;
-}
-
-.download {
 }
 
 .center {
