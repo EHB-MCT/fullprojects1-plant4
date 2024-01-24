@@ -203,7 +203,7 @@ body {
 	width: 50%;
 }
 .panel p {
-	text-align: justify;
+	text-align: left;
 }
 
 .accordion p {
