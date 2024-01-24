@@ -68,3 +68,11 @@ ul {
 	font-size: 15pt;
 	color: #000;
 }
+
+.accordion:after {
+	font-family: "expo-serif-pro", serif;
+}
+
+.active:after {
+	font-family: "expo-serif-pro", serif;
+}
