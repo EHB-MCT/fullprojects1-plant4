@@ -176,6 +176,8 @@ header .logo a {
 	}
 }
 
+/* VERSLAGEN ACCORDION MENU */
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
 	margin-top: 100px;
@@ -229,9 +231,6 @@ header .logo a {
 	content: "-"; /* Unicode character for "minus" sign (-) */
 	font-size: 50px;
 	margin-bottom: 10px;
-}
-
-.download {
 }
 
 .center {
