@@ -6,7 +6,7 @@ body {
 }
 
 .wrapper {
-	width: 90%;
+	widzth: 90%;
 	margin-left: 5%;
 }
 
@@ -16,14 +16,14 @@ header .logo {
 	width: fit-content;
 	display: flex;
 	justify-content: flex-start;
-	z-index: 99999999;
+	z-index: 80;
 }
 header .logo a {
 	justify-self: flex-start;
 }
 
 nav {
-	z-index: 99999999;
+	z-index: 80;
 }
 
 /* HOME PAGE --> INTRO TEXT*/
@@ -90,6 +90,29 @@ nav {
 	#title {
 		display: none;
 	}
+	.veenbes {
+		display: none;
+	}
+	.text1 h1 {
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+
+	.gewonenav {
+		display: none;
+	}
+
+	.mylinks a {
+		z-index: 81;
+	}
+
+	.text p {
+		text-align: left;
+	}
+
+	.corevalues {
+		width: 80%;
+	}
 }
 @media (min-width: 768px) {
 	#title {
@@ -109,6 +132,13 @@ nav {
 	.intro .text {
 		text-align: left;
 		width: 50%;
+	}
+	.veenbes {
+		display: none;
+	}
+	.text1 h1 {
+		margin-left: 0px;
+		margin-top: 0px;
 	}
 }
 @media (max-width: 1000px) {
