@@ -5,13 +5,21 @@ body {
 	background-image: url(../images/Artboard\ 1\ copy\ 3-8.png);
 }
 
+.outer-wrapper {
+	display: flex;
+	justify-content: center;
+	justify-self: center;
+}
+
 .wrapper {
-	widzth: 90%;
-	margin-left: 5%;
+	width: 90%;
 }
 
 /* HOME PAGE */
 /* HOME PAGE --> HEADER*/
+header {
+	margin-top: 5px;
+}
 header .logo {
 	width: fit-content;
 	display: flex;
@@ -33,6 +41,9 @@ nav {
 	align-items: center;
 	margin-top: -150px;
 }
+.intro p {
+	margin-top: 8px;
+}
 .intro .image {
 	display: flex;
 	justify-content: flex-end;
@@ -47,7 +58,7 @@ nav {
 .intro1 {
 	display: flex;
 	justify-content: center;
-	margin-top: -140px;
+	margin-top: -100px;
 	margin-left: 100px;
 }
 
@@ -79,10 +90,13 @@ nav {
 /* HOME PAGE --> IMAGE COREVALUES*/
 .corevalues {
 	margin-top: 30px;
+	display: flex;
+	justify-content: center;
 }
 .corevalues img {
 	width: 100%;
 	margin-top: 70px;
+	margin-bottom: 40px;
 }
 
 /* HOME PAGE --> RESPONSIVE DESIGN*/
@@ -132,13 +146,6 @@ nav {
 	.intro .text {
 		text-align: left;
 		width: 50%;
-	}
-	.veenbes {
-		display: none;
-	}
-	.text1 h1 {
-		margin-left: 0px;
-		margin-top: 0px;
 	}
 }
 @media (max-width: 1000px) {
@@ -330,14 +337,17 @@ nav {
 	background-color: transparent;
 	cursor: pointer;
 	padding: 1px;
-	width: 50%;
 	text-align: left;
-	border-bottom: 5px solid gray;
+	width: 100%;
+	border-bottom: 5px dotted #1c632a;
 	border-top: none;
 	border-left: none;
 	border-right: none;
 	outline: none;
 	transition: 0.4s;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -353,21 +363,17 @@ nav {
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
-	width: 50%;
+	width: 100%;
 	justify-content: flex-start;
 }
 .panel p {
 	text-align: left;
 }
 
-.accordion p {
-	margin-bottom: -30px;
-}
-
 .accordion:after {
 	content: "+"; /* Unicode character for "plus" sign (+) */
 	font-size: 50px;
-	color: green !important;
+	color: #1c632a !important;
 	float: right;
 	margin-left: 5px;
 	margin-bottom: 10px;
@@ -417,16 +423,20 @@ html {
 .job {
 	margin-bottom: 5px;
 }
-.verslag h2 {
-	text-align: center;
-	margin-top: 10px;
+
+.intro-verslag {
+	width: 50%;
 }
 .intro-verslag h2 {
-	font-family: "antiquarian-scribe", sans-serif;
-	text-align: center;
+	margin-bottom: 0;
+	margin-top: 70px;
 }
 .bloem img {
 	width: 400px;
 	float: right;
 	margin-top: -500px;
+}
+
+.verslag {
+	margin-top: 100px;
 }
