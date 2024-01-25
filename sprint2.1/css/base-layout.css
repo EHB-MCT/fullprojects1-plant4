@@ -16,9 +16,14 @@ header .logo {
 	width: fit-content;
 	display: flex;
 	justify-content: flex-start;
+	z-index: 99999999;
 }
 header .logo a {
 	justify-self: flex-start;
+}
+
+nav {
+	z-index: 99999999;
 }
 
 /* HOME PAGE --> INTRO TEXT*/
@@ -42,7 +47,7 @@ header .logo a {
 .intro1 {
 	display: flex;
 	justify-content: center;
-	margin-top: 10px;
+	margin-top: -140px;
 	margin-left: 100px;
 }
 
@@ -51,7 +56,7 @@ header .logo a {
 }
 
 .intro1 p {
-	margin-top: 0px;
+	margin-top: -10px;
 	margin-left: 20px;
 }
 
