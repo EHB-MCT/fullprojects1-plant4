@@ -293,9 +293,10 @@ nav {
 	}
 }
 
+/* VERSLAGEN*/
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-	margin-top: 100px;
+	margin-top: 50px;
 	background-color: transparent;
 	cursor: pointer;
 	padding: 1px;
@@ -385,4 +386,17 @@ html {
 
 .job {
 	margin-bottom: 5px;
+}
+.verslag h2 {
+	text-align: center;
+	margin-top: 10px;
+}
+.intro-verslag h2 {
+	font-family: "antiquarian-scribe", sans-serif;
+	text-align: center;
+}
+.bloem img {
+	width: 400px;
+	float: right;
+	margin-top: -500px;
 }
