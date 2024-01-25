@@ -81,11 +81,16 @@ ul {
 	font-family: "forma-djr-text", sans-serif;
 	font-weight: 600;
 	font-size: 40pt;
+	padding-top: 30px;
+	margin-left: -100px;
 }
 
 .rodetext {
 	color: #941619;
 	font-weight: 700;
-	font-size: 45pt;
-	line-height: 55px;
+	font-size: 50pt;
+	line-height: 50px;
+	margin-top: 0px;
+	margin-left: -30px;
+	line-height: 60px;
 }
