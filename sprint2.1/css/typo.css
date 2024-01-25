@@ -13,7 +13,7 @@ h1 {
 }
 
 h2 {
-	font-family: "expo-serif-pro", serif;
+	font-family: "forma-djr-text", sans-serif;
 	font-weight: 600;
 	font-size: 40pt;
 	font-style: normal;
@@ -22,10 +22,9 @@ h2 {
 
 h3 {
 	font-family: "expo-serif-pro", serif;
-	font-weight: 600;
-	font-style: italic;
+	font-weight: 700;
 	font-size: 35pt;
-	color: #4d4d4d;
+	color: black;
 }
 
 h4 {
@@ -83,6 +82,7 @@ ul {
 	font-size: 40pt;
 	padding-top: 30px;
 	margin-left: -100px;
+	line-height: 50px;
 }
 
 .rodetext {
