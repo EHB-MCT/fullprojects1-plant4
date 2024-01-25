@@ -426,17 +426,25 @@ html {
 
 .intro-verslag {
 	width: 50%;
+	flex: 1;
+}
+.bloem {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 .intro-verslag h2 {
 	margin-bottom: 0;
 	margin-top: 70px;
 }
 .bloem img {
-	width: 400px;
-	float: right;
-	margin-top: -500px;
+	width: 80%;
 }
 
 .verslag {
 	margin-top: 100px;
+	display: flex;
+
+	justify-content: space-between;
 }
