@@ -76,3 +76,16 @@ ul {
 .active:after {
 	font-family: "expo-serif-pro", serif;
 }
+
+.spanfont {
+	font-family: "forma-djr-text", sans-serif;
+	font-weight: 600;
+	font-size: 40pt;
+}
+
+.rodetext {
+	color: #941619;
+	font-weight: 700;
+	font-size: 45pt;
+	line-height: 55px;
+}

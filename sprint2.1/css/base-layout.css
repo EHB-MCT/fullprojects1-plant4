@@ -39,6 +39,24 @@ header .logo a {
 	text-align: center;
 }
 
+.intro1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+.intro1 .image1 {
+	display: flex;
+	justify-content: flex-end;
+}
+.intro1 .image1 img {
+	width: 120%;
+}
+.intro1 .text1 {
+	line-height: 40px;
+	text-align: left;
+}
+
 /* HOME PAGE --> IMAGE COREVALUES*/
 .corevalues {
 	margin-top: 30px;
@@ -53,6 +71,45 @@ header .logo a {
 		display: none;
 	}
 }
+@media (min-width: 768px) {
+	#title {
+		margin-bottom: 0;
+	}
+	.logo {
+		display: none;
+	}
+	header nav {
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+		margin-top: 15px;
+	}
+}
+@media (min-width: 1000px) {
+	.intro .text {
+		text-align: left;
+		width: 50%;
+	}
+}
+@media (max-width: 1000px) {
+	.intro .image {
+		display: none;
+	}
+	.intro {
+		margin-top: 0;
+	}
+}
+@media (min-width: 1200px) {
+	.wrapper {
+		width: 1200px;
+		padding: 0 2.5%;
+	}
+	.outer-wrapper {
+		display: flex;
+		justify-content: center;
+	}
+}
+
 @media (min-width: 768px) {
 	#title {
 		margin-bottom: 0;
