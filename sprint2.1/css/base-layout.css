@@ -44,15 +44,21 @@ nav {
 .intro p {
 	margin-top: 8px;
 }
+
+.intro h1 {
+	margin-bottom: 10px;
+}
 .intro .image {
 	display: flex;
 	justify-content: flex-end;
+	flex: 1;
 }
 .intro .image img {
-	width: 70%;
+	width: 90%;
 }
 .intro .text {
-	text-align: center;
+	text-align: left;
+	flex: 1;
 }
 
 .intro1 {
@@ -100,124 +106,78 @@ nav {
 }
 
 /* HOME PAGE --> RESPONSIVE DESIGN*/
+@media (min-width: 1200px) {
+	.wrapper {
+		width: 1200px;
+	}
+}
+
 @media (max-width: 768px) {
-	#title {
-		display: none;
-	}
-	.veenbes {
-		display: none;
-	}
-	.text1 h1 {
+	.intro1 {
+		display: flex;
 		margin-left: 0px;
+		margin-top: -190px;
+	}
+	.intro1 img {
+		display: none;
+	}
+	.intro1 .text1 H1,
+	.intro1 .text1 p {
+		margin-left: 0px;
+		text-align: left;
+	}
+
+	.text1 {
+		justify-content: flex-start;
+	}
+
+	.intro {
 		margin-top: 0px;
 	}
-
-	.gewonenav {
+	#title {
 		display: none;
 	}
-
-	.mylinks a {
-		z-index: 81;
-	}
-
-	.text p {
-		text-align: left;
-	}
-
-	.corevalues {
-		width: 80%;
+	#title2 {
+		line-height: 60px;
 	}
 }
 @media (min-width: 768px) {
-	#title {
-		margin-bottom: 0;
-	}
-	.logo {
+	#title2 {
 		display: none;
-	}
-	header nav {
-		display: flex;
-		justify-content: flex-end;
-		width: 100%;
-		margin-top: 15px;
-	}
-}
-@media (min-width: 1000px) {
-	.intro .text {
-		text-align: left;
-		width: 50%;
-	}
-}
-@media (max-width: 1000px) {
-	.intro .image {
-		display: none;
-	}
-	.intro {
-		margin-top: 0;
-	}
-}
-@media (min-width: 1200px) {
-	.wrapper {
-		width: 1200px;
-		padding: 0 2.5%;
-	}
-	.outer-wrapper {
-		display: flex;
-		justify-content: center;
 	}
 }
 
-@media (min-width: 768px) {
-	#title {
-		margin-bottom: 0;
-	}
-	.logo {
-		display: none;
-	}
-	header nav {
-		display: flex;
-		justify-content: flex-end;
-		width: 100%;
-		margin-top: 15px;
-	}
-}
-@media (min-width: 1000px) {
-	.intro .text {
-		text-align: left;
-		width: 50%;
-	}
-}
-@media (max-width: 1000px) {
+@media (max-width: 480px) {
 	.intro .image {
 		display: none;
 	}
-	.intro {
-		margin-top: 0;
+	.intro1 .text1 h1 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+	.intro1 .text1 h1.rodetext {
+		font-size: 40px;
+		line-height: 40px;
 	}
 }
-@media (min-width: 1200px) {
-	.wrapper {
-		width: 1200px;
-		padding: 0 2.5%;
-	}
-	.outer-wrapper {
-		display: flex;
-		justify-content: center;
-	}
-}
-
 /* OVER ONS */
 
 .organisatie,
 .item {
 	margin-top: 30px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 }
 
-.organisatie img,
+.organisatie img {
+	width: 70%;
+}
+
+.organisatie h2 {
+	margin-bottom: 5px;
+}
 .kernwaarden img {
 	width: 80%;
 }
@@ -233,6 +193,11 @@ nav {
 	flex: 1;
 	display: flex;
 	justify-content: flex-end;
+}
+
+.organisatie .text {
+	align-self: flex-start;
+	margin-top: 110px;
 }
 
 .kernwaarden h3 {
@@ -279,13 +244,6 @@ nav {
 	margin-top: -40px;
 }
 
-@media (min-width: 768px) {
-	.organisatie,
-	.item {
-		flex-direction: row;
-	}
-}
-
 /* GEERT AUSLOOS */
 
 .gert {
@@ -319,15 +277,6 @@ nav {
 }
 .gert img {
 	width: 60%;
-}
-
-@media (min-width: 768px) {
-	.gert .item {
-		flex-direction: row;
-	}
-	.gert .item .text {
-		text-align: left;
-	}
 }
 
 /* VERSLAGEN*/
@@ -397,7 +346,6 @@ nav {
 }
 
 .jumplink {
-	margin: 25px;
 	margin-bottom: 0px;
 	color: black;
 	font-size: 12pt;
@@ -445,6 +393,5 @@ html {
 .verslag {
 	margin-top: 100px;
 	display: flex;
-
 	justify-content: space-between;
 }
