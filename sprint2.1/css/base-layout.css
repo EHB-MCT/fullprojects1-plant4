@@ -402,7 +402,8 @@ footer {
 
 footer .einde {
 	display: flex;
-	padding: 50px;
+	padding: 20px;
+	margin-top: 20px;
 	background-color: #dbc3a9;
 	flex-direction: column;
 }
