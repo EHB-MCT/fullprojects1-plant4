@@ -100,3 +100,7 @@ ul {
 	font-weight: 600;
 	font-size: 29.5pt;
 }
+
+input[type="text"] {
+	font-family: "forma-djr-text", sans-serif;
+}

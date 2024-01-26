@@ -395,3 +395,55 @@ html {
 	display: flex;
 	justify-content: space-between;
 }
+
+footer {
+	margin-top: 150px;
+}
+
+footer .einde {
+	display: flex;
+	padding: 50px;
+	background-color: #dbc3a9;
+	flex-direction: column;
+}
+
+.einde {
+	align-items: center;
+}
+
+footer h3 {
+	font-size: 34pt;
+	text-align: center;
+	margin-top: 5px;
+}
+
+footer input {
+	color: black;
+}
+
+footer input {
+	align-items: center;
+	width: 360px;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+input {
+	border: none;
+	padding: 5px;
+}
+
+.verstuur {
+	font-family: "forma-djr-text", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12.5pt;
+	color: #f3dfc1;
+	padding: 6px 15px;
+	background-color: #1c632a;
+	border-radius: 12px;
+	text-decoration: none;
+	display: inline-block;
+	width: 100px;
+	border: none;
+}
