@@ -88,6 +88,7 @@ nav {
 .intro1 .image1 img {
 	width: 80%;
 	margin-top: 5%;
+	margin-left: 50px;
 }
 .intro1 .text1 {
 	flex: 1;
@@ -215,7 +216,7 @@ nav {
 }
 
 .kernwaarden h2 {
-	margin-bottom: 0px;
+	margin-bottom: -50px;
 }
 
 .kernwaarden p {
@@ -226,7 +227,6 @@ nav {
 	flex: 1;
 	display: flex;
 	justify-content: flex-start;
-	margin-top: -50px;
 }
 
 .kernwaarden .klimop {
@@ -234,8 +234,9 @@ nav {
 	align-items: flex-start;
 	flex-direction: column;
 	background-image: url(../images/klimop.png);
-	background-size: cover;
-	background-position: top right;
+	background-size: contain;
+	background-position: center right;
+	background-repeat: no-repeat;
 }
 
 .kernwaarden .text2 {
@@ -249,10 +250,86 @@ nav {
 .kernwaarden .item2 {
 	margin-top: -40px;
 }
+
+.klein img {
+	width: 100%;
+}
+@media (min-width: 1001px) {
+	.klokjeklein {
+		display: none;
+	}
+}
 @media (max-width: 768px) {
-	.organisatie,
+	.organisatie {
+		flex-direction: column;
+	}
+	.organisatie .image {
+		justify-content: center;
+	}
+	.organisatie img {
+		width: 50%;
+	}
+	.organisatie .text {
+		margin-top: 10px;
+	}
+}
+@media (max-width: 1000px) {
 	.item {
 		flex-direction: column;
+	}
+	.kernwaarden img {
+		width: 50%;
+	}
+	.kernwaarden .item {
+		flex-direction: column;
+	}
+	.kernwaarden .item2 {
+		margin-top: 0px;
+		justify-content: center;
+	}
+	.klimop .text {
+		width: 100%;
+	}
+	.klokjegroot {
+		display: none;
+	}
+	.kernwaarden .image2 {
+		justify-content: center;
+		margin-top: 0px;
+	}
+	.kernwaarden .klimop {
+		background-image: none;
+	}
+	.kernwaarden .text2 {
+		margin-top: 0px;
+	}
+	.image3 {
+		display: flex;
+		justify-content: center;
+	}
+	.image3 img {
+		width: 80%;
+		margin-left: -40px;
+	}
+	#emphatie {
+		margin-top: 0;
+	}
+	.kernwaarden h2 {
+		margin-top: 130px;
+		margin-bottom: 0;
+	}
+	.organisatie {
+		margin-top: 0;
+	}
+}
+@media (max-width: 768px) {
+	.bullshit2 .jump {
+		display: none;
+	}
+}
+@media (max-width: 500px) {
+	.kernwaarden img {
+		width: 80%;
 	}
 }
 
@@ -382,9 +459,13 @@ nav {
 	display: flex;
 	flex-direction: row;
 	justify-self: center;
-	width: 50%;
-	margin-top: 5px;
+	width: 65%;
+	margin-top: 10px;
 	justify-content: space-between;
+}
+.jump a {
+	font-size: 20px;
+	font-weight: 700;
 }
 .bullshit2 {
 	display: flex;
