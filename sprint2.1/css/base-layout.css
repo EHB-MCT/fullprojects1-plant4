@@ -148,7 +148,7 @@ nav {
 		z-index: 91;
 	}
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
 	#title2 {
 		display: none;
 	}
