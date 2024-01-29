@@ -258,12 +258,6 @@ nav {
 	justify-content: space-around;
 	flex-direction: column;
 }
-.gert .item {
-	background-image: url(../images/sering.png);
-	background-position: bottom left;
-	background-size: 65%;
-	background-repeat: no-repeat;
-}
 
 .gert .image {
 	display: flex;
@@ -273,6 +267,15 @@ nav {
 .gert img {
 	width: 60%;
 }
+.row2 .image {
+	align-items: center;
+}
+.row2 img {
+	width: 100%;
+}
+.bullshit {
+	height: fit-content;
+}
 .row1 {
 	flex-direction: row;
 	display: flex;
@@ -280,18 +283,12 @@ nav {
 	align-items: center;
 }
 .row2 {
-	margin-top: 50px;
 	display: flex;
 	justify-content: flex-end;
 }
 .row1 .text,
 .row2 .text {
 	width: 50%;
-}
-@media (min-width: 730px) {
-	.row2 img {
-		display: none;
-	}
 }
 
 @media (max-width: 730px) {
@@ -434,7 +431,7 @@ html {
 }
 
 footer {
-	margin-top: 150px;
+	margin-top: 50px;
 }
 
 footer .einde {
