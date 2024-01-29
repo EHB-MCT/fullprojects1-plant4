@@ -33,6 +33,9 @@ header .logo a {
 nav {
 	z-index: 80;
 }
+.hamburger {
+	z-index: 91;
+}
 
 /* HOME PAGE --> INTRO TEXT*/
 .intro {
@@ -65,7 +68,6 @@ nav {
 	display: flex;
 	justify-content: center;
 	margin-top: -100px;
-	margin-left: 100px;
 }
 
 .intro1 h1 {
@@ -81,13 +83,14 @@ nav {
 	margin-left: 50px;
 }
 .intro1 .image1 {
-	display: flex;
-	justify-content: flex-end;
+	flex: 1;
 }
 .intro1 .image1 img {
-	width: 120%;
+	width: 80%;
+	margin-top: 5%;
 }
 .intro1 .text1 {
+	flex: 1;
 	line-height: 60px;
 	text-align: left;
 	padding-top: 170px;
@@ -118,7 +121,7 @@ nav {
 		margin-left: 0px;
 		margin-top: -190px;
 	}
-	.intro1 img {
+	.intro1 .image1 {
 		display: none;
 	}
 	.intro1 .text1 H1,
@@ -140,6 +143,10 @@ nav {
 	#title2 {
 		line-height: 60px;
 	}
+
+	.hamburger .myLinks {
+		z-index: 91;
+	}
 }
 @media (min-width: 768px) {
 	#title2 {
@@ -151,15 +158,18 @@ nav {
 	.intro .image {
 		display: none;
 	}
+}
+@media (max-width: 650px) {
 	.intro1 .text1 h1 {
 		font-size: 30px;
 		line-height: 30px;
 	}
 	.intro1 .text1 h1.rodetext {
 		font-size: 40px;
-		line-height: 40px;
+		line-height: 35px;
 	}
 }
+
 /* OVER ONS */
 
 .organisatie,
@@ -249,16 +259,12 @@ nav {
 	flex-direction: column;
 }
 .gert .item {
-	display: flex;
 	background-image: url(../images/sering.png);
 	background-position: bottom left;
 	background-size: 65%;
 	background-repeat: no-repeat;
 }
 
-.gert .text {
-	flex: 1;
-}
 .gert .image {
 	display: flex;
 	justify-content: center;
@@ -267,13 +273,47 @@ nav {
 .gert img {
 	width: 60%;
 }
-.column1 {
-	flex: 1;
+.row1 {
+	flex-direction: row;
 	display: flex;
-	align-items: flex-start;
+
+	align-items: center;
 }
-.column2 {
-	flex: 1;
+.row2 {
+	margin-top: 50px;
+	display: flex;
+	justify-content: flex-end;
+}
+.row1 .text,
+.row2 .text {
+	width: 50%;
+}
+@media (min-width: 730px) {
+	.row2 img {
+		display: none;
+	}
+}
+
+@media (max-width: 730px) {
+	.row2 img {
+		width: 100%;
+	}
+	.row2 {
+		flex-direction: column;
+	}
+	.row1 {
+		flex-direction: column-reverse;
+	}
+	.row1 .text,
+	.row2 .text {
+		width: 100%;
+	}
+	.gert img {
+		width: 100%;
+	}
+	.gert .item {
+		background-image: none;
+	}
 }
 
 /* VERSLAGEN*/
@@ -388,7 +428,7 @@ html {
 }
 
 .verslag {
-	margin-top: 100px;
+	margin-top: 30px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -444,4 +484,16 @@ input {
 	display: inline-block;
 	width: 100px;
 	border: none;
+}
+
+@media (max-width: 768px) {
+	.verslag {
+		flex-direction: column;
+	}
+	.bloem {
+		display: none;
+	}
+	.intro-verslag {
+		width: 100%;
+	}
 }

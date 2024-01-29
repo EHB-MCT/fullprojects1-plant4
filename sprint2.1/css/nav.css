@@ -23,6 +23,7 @@ nav .hamburger a {
 	padding: 14px 16px;
 	text-decoration: none;
 	display: block;
+	position: relative;
 }
 .gewonenav a {
 	font-family: "forma-djr-text", sans-serif;
