@@ -215,7 +215,7 @@ nav {
 }
 
 .kernwaarden h2 {
-	margin-bottom: -200px;
+	margin-bottom: 0px;
 }
 
 .kernwaarden p {
@@ -248,6 +248,12 @@ nav {
 
 .kernwaarden .item2 {
 	margin-top: -40px;
+}
+@media (max-width: 768px) {
+	.organisatie,
+	.item {
+		flex-direction: column;
+	}
 }
 
 /* GEERT AUSLOOS */
@@ -375,10 +381,16 @@ nav {
 .jump {
 	display: flex;
 	flex-direction: row;
+	justify-self: center;
+	width: 50%;
 	margin-top: 5px;
-	justify-content: center;
+	justify-content: space-between;
 }
-
+.bullshit2 {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
 .jumplink {
 	margin-bottom: 0px;
 	color: black;
