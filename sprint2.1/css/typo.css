@@ -92,6 +92,15 @@ ul {
 	line-height: 20px;
 }
 
+.redtext {
+	font-family: "expo-serif-pro", serif;
+	color: #941619;
+	font-weight: 700;
+	font-size: 50pt;
+	margin-top: 0px;
+	line-height: 20px;
+}
+
 .navfont {
 	font-family: "forma-djr-text", sans-serif;
 	font-weight: 600;
