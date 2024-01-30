@@ -66,6 +66,8 @@ nav {
 .intro1 {
 	display: flex;
 	justify-content: center;
+	margin-left: 80px;
+	margin-top: 20px;
 }
 
 .intro1 h1 {
@@ -74,7 +76,8 @@ nav {
 
 .intro1 p {
 	margin-top: -10px;
-	margin-left: 20px;
+	margin-left: 0px;
+	padding-bottom: 110px;
 }
 
 .break {
@@ -83,7 +86,7 @@ nav {
 .intro1 .image1 {
 	flex: 1;
 	background-image: url(../images/Veenbes.png);
-	background-size: 80%;
+	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center left;
 }
@@ -115,6 +118,16 @@ nav {
 @media (min-width: 1200px) {
 	.wrapper {
 		width: 1200px;
+	}
+	.veen {
+		display: none;
+	}
+}
+@media (max-width: 1200px) {
+	.intro1 .image1 {
+		background-image: none;
+	}
+	.spanfont {
 	}
 }
 
