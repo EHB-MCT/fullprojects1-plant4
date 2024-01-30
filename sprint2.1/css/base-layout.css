@@ -575,22 +575,69 @@ html {
 	scroll-behavior: smooth;
 }
 
+/* OVER ONS -- DE GROEP */
 .ledenlijst {
 	margin-top: 200px;
 }
-
-.wholelist {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+.ledenlijst .person {
+	margin-top: 30px;
+	width: 30%;
 }
-
-.person {
-	font-weight: bold;
+.ledenlijst .quote {
+	font-size: 30px;
+	margin: 0;
 }
-
-.job {
-	margin-bottom: 5px;
+.ledenlijst .name {
+	font-size: 30px;
+	margin: 0;
+	margin-top: 10px;
+}
+.ledenlijst .work {
+	margin: 0;
+}
+#lid1 {
+	margin-left: 0%;
+}
+#lid2 {
+	margin-left: 35%;
+}
+#lid3 {
+	margin-left: 70%;
+}
+#lid4 {
+	margin-left: 35%;
+}
+@media (max-width: 1200px) {
+	.ledenlijst .person {
+		margin-top: 30px;
+		width: 50%;
+	}
+	#lid1,
+	#lid3,
+	#lid5 {
+		margin-left: 0;
+	}
+	#lid2,
+	#lid4 {
+		text-align: right;
+		margin-left: 50%;
+	}
+}
+@media (max-width: 700px) {
+	.ledenlijst .person {
+		margin-top: 60px;
+		width: 80%;
+	}
+	#lid1,
+	#lid3,
+	#lid5 {
+		margin-left: 0;
+	}
+	#lid2,
+	#lid4 {
+		text-align: right;
+		margin-left: 20%;
+	}
 }
 
 .intro-verslag {
