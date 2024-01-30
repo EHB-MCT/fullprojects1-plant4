@@ -645,7 +645,7 @@ footer input {
 
 footer input {
 	align-items: center;
-	width: 360px;
+	width: 50%;
 	justify-content: center;
 	margin-bottom: 20px;
 }
