@@ -56,7 +56,7 @@ nav {
 	flex: 1;
 }
 .intro .image img {
-	width: 90%;
+	width: 70%;
 }
 .intro .text {
 	text-align: left;
@@ -66,7 +66,6 @@ nav {
 .intro1 {
 	display: flex;
 	justify-content: center;
-	margin-left: 80px;
 	margin-top: 20px;
 }
 
@@ -77,7 +76,6 @@ nav {
 .intro1 p {
 	margin-top: -10px;
 	margin-left: 0px;
-	padding-bottom: 110px;
 }
 
 .break {
@@ -85,21 +83,26 @@ nav {
 }
 .intro1 .image1 {
 	flex: 1;
-	background-image: url(../images/Veenbes.png);
-	background-size: 100%;
+	background-image: url(../images/citroengras.png);
+	background-size: 85%;
 	background-repeat: no-repeat;
 	background-position: center left;
+	display: flex;
+	align-items: center;
 }
 
 .intro1 .image1 img {
 	width: 90%;
-	margin-top: 5%;
 	margin-left: 50px;
 }
 .intro1 .text1 {
 	flex: 1;
 	line-height: 60px;
 	text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 120px 0px;
 }
 
 /* HOME PAGE --> IMAGE COREVALUES*/
@@ -113,9 +116,12 @@ nav {
 	margin-top: 70px;
 	margin-bottom: 40px;
 }
+.veen2 {
+	width: 80%;
+}
 
 /* HOME PAGE --> RESPONSIVE DESIGN*/
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
 	.wrapper {
 		width: 1200px;
 	}
@@ -127,7 +133,36 @@ nav {
 	.intro1 .image1 {
 		background-image: none;
 	}
-	.spanfont {
+	.intro1 .image1 img {
+		width: 100%;
+		margin-left: 0px;
+	}
+}
+@media (max-width: 1000px) {
+	.veen {
+		display: none;
+	}
+	.text1 .veen2 {
+		display: flex;
+		flex-direction: column;
+	}
+	.intro1 .image1 {
+		display: none;
+	}
+	.intro1 .text1 {
+		flex: 1;
+		line-height: 60px;
+		text-align: left;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-top: 40px;
+		padding-bottom: 0;
+	}
+}
+@media (min-width: 1001px) {
+	.veen2 {
+		display: none;
 	}
 }
 
@@ -135,11 +170,11 @@ nav {
 	.intro1 {
 		display: flex;
 		margin-left: 0px;
-		margin-top: -190px;
 	}
 	.intro1 .image1 {
 		display: none;
 	}
+
 	.intro1 .text1 H1,
 	.intro1 .text1 p {
 		margin-left: 0px;
@@ -153,19 +188,15 @@ nav {
 	.intro {
 		margin-top: 0px;
 	}
-	#title {
-		display: none;
-	}
-	#title2 {
-		line-height: 60px;
-	}
 
 	.hamburger .myLinks {
 		z-index: 91;
 	}
-}
-@media (min-width: 769px) {
-	#title2 {
+	.intro1 p {
+		padding-bottom: 0;
+	}
+
+	.intro .image {
 		display: none;
 	}
 }
@@ -176,13 +207,22 @@ nav {
 	}
 }
 @media (max-width: 650px) {
-	.intro1 .text1 h1 {
-		font-size: 30px;
-		line-height: 30px;
+	#spanfont1 {
+		display: none;
 	}
-	.intro1 .text1 h1.rodetext {
-		font-size: 40px;
-		line-height: 35px;
+	#title {
+		display: none;
+	}
+	#title2 {
+		line-height: 60px;
+	}
+}
+@media (min-width: 651px) {
+	#spanfont2 {
+		display: none;
+	}
+	#title2 {
+		display: none;
 	}
 }
 
@@ -231,7 +271,7 @@ nav {
 }
 
 .kernwaarden h2 {
-	margin-bottom: -50px;
+	margin-bottom: -145px;
 }
 
 .kernwaarden p {
@@ -269,6 +309,12 @@ nav {
 .klein img {
 	width: 100%;
 }
+@media (max-width: 1200px) {
+	.kernwaarden h2 {
+		margin-bottom: -50px;
+	}
+}
+
 @media (min-width: 1001px) {
 	.klokjeklein {
 		display: none;
