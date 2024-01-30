@@ -448,7 +448,7 @@ nav {
 	align-items: center;
 }
 .row2 img {
-	width: 100%;
+	width: 80%;
 }
 .bullshit {
 	height: fit-content;
@@ -467,7 +467,11 @@ nav {
 .row2 .text {
 	width: 50%;
 }
-
+@media (max-width: 1200px) {
+	.row2 img {
+		width: 100%;
+	}
+}
 @media (max-width: 730px) {
 	.row2 img {
 		width: 100%;
@@ -494,7 +498,6 @@ nav {
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
 	margin-top: 50px;
-	background-color: transparent;
 	cursor: pointer;
 	padding: 1px;
 	text-align: left;
@@ -508,12 +511,12 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	background-color: transparent;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
-	background-color: #ccc;
 	border-radius: 10px;
 }
 
@@ -577,7 +580,7 @@ html {
 
 /* OVER ONS -- DE GROEP */
 .ledenlijst {
-	margin-top: 200px;
+	margin-top: 100px;
 }
 .ledenlijst .person {
 	margin-top: 30px;
@@ -621,6 +624,11 @@ html {
 	#lid4 {
 		text-align: right;
 		margin-left: 50%;
+	}
+}
+@media (max-width: 1000px) {
+	.ledenlijst {
+		margin-top: 40px;
 	}
 }
 @media (max-width: 700px) {
