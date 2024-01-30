@@ -99,6 +99,18 @@ nav {
 	display: flex;
 	align-items: center;
 }
+.intro1 #aloevera {
+	flex: 1;
+	background-image: url(../images/aloevera.png);
+	background-size: 55%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: flex;
+	align-items: center;
+}
+.intro1 #aloevera.image1 img {
+	width: 80%;
+}
 
 .intro1 .image1 img {
 	width: 90%;
@@ -145,6 +157,9 @@ nav {
 	.intro1 #veenbes.image1 {
 		background-image: none;
 	}
+	.intro1 #aloevera.image1 {
+		background-image: none;
+	}
 	.intro1 .image1 img {
 		width: 100%;
 		margin-left: 0px;
@@ -162,6 +177,9 @@ nav {
 		display: none;
 	}
 	.intro1 #veenbes.image1 {
+		display: none;
+	}
+	.intro1 #aloevera.image1 {
 		display: none;
 	}
 	.intro1 .text1 {

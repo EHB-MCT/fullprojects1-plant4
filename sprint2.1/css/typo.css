@@ -91,10 +91,17 @@ ul {
 	margin-top: 0px;
 	line-height: 20px;
 }
-
 .redtext {
 	font-family: "expo-serif-pro", serif;
 	color: #941619;
+	font-weight: 700;
+	font-size: 50pt;
+	margin-top: 0px;
+	line-height: 20px;
+}
+.veratext {
+	font-family: "expo-serif-pro", serif;
+	color: #54873e;
 	font-weight: 700;
 	font-size: 50pt;
 	margin-top: 0px;
