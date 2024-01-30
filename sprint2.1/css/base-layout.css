@@ -42,7 +42,6 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: -150px;
 }
 .intro p {
 	margin-top: 8px;
@@ -67,7 +66,6 @@ nav {
 .intro1 {
 	display: flex;
 	justify-content: center;
-	margin-top: -100px;
 }
 
 .intro1 h1 {
@@ -84,9 +82,14 @@ nav {
 }
 .intro1 .image1 {
 	flex: 1;
+	background-image: url(../images/Veenbes.png);
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: center left;
 }
+
 .intro1 .image1 img {
-	width: 80%;
+	width: 90%;
 	margin-top: 5%;
 	margin-left: 50px;
 }
@@ -94,7 +97,6 @@ nav {
 	flex: 1;
 	line-height: 60px;
 	text-align: left;
-	padding-top: 170px;
 }
 
 /* HOME PAGE --> IMAGE COREVALUES*/
