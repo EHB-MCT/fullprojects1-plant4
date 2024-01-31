@@ -696,13 +696,16 @@ footer h3 {
 
 footer input {
 	color: black;
-}
-
-footer input {
 	align-items: center;
-	width: 50%;
+	width: 100%;
 	justify-content: center;
 	margin-bottom: 20px;
+}
+form {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 input {
