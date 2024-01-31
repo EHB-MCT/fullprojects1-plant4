@@ -159,7 +159,13 @@ nav {
 	}
 	.intro1 #aloevera.image1 {
 		background-image: none;
+		justify-content: center;
 	}
+
+	.intro1 #aloevera.image1 img {
+		width: 60%;
+	}
+
 	.intro1 .image1 img {
 		width: 100%;
 		margin-left: 0px;
@@ -191,6 +197,9 @@ nav {
 		justify-content: center;
 		padding-top: 40px;
 		padding-bottom: 0;
+	}
+	.wrapper .carousel {
+		height: auto;
 	}
 }
 @media (min-width: 1001px) {
