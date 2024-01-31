@@ -57,58 +57,82 @@
 						}
 					</script>
 				</header>
-				<!-- <div class="intro1">
-					<div class="image1">
-						<img class="veen" src="images/citroengras.png" alt="citroengras" />
-						
+				<div class="slideshow-container">
+					<div class="mySlides fade">
+						<div class="numbertext">1 / 3</div>
+						<div class="intro1">
+							<div class="image1">
+								<img
+									class="veen"
+									src="images/citroengras.png"
+									alt="citroengras"
+								/>
+							</div>
+
+							<div class="text1">
+								<h1 class="spanfont" id="spanfont1">MUGGENPLAGEN?</h1>
+								<h1 class="spanfont" id="spanfont2">
+									MUGGEN- <br />
+									PLAGEN?
+								</h1>
+								<h1 class="spanfont">
+									<span class="greentext">citroengras</span> <br />
+									OM ZE WEG TE JAGEN.
+								</h1>
+								<p>Iedere plant voegt iets waardevols toe</p>
+							</div>
+						</div>
 					</div>
 
-					<div class="text1">
-						<h1 class="spanfont" id="spanfont1">MUGGENPLAGEN?</h1>
-						<h1 class="spanfont" id="spanfont2">
-							MUGGEN- <br />
-							PLAGEN?
-						</h1>
-						<h1 class="spanfont">
-							<span class="greentext">citroengras</span> <br />
-							OM ZE WEG TE JAGEN.
-						</h1>
-						<p>Iedere plant voegt iets waardevols toe</p>
-					</div>
-				</div> -->
-				<!-- <div class="intro1">
-					<div class="image1" id="veenbes">
-						<img class="veen" src="images/Veenbes.png" alt="veenbes" />
+					<div class="mySlides fade">
+						<div class="numbertext">2 / 3</div>
+						<div class="intro1">
+							<div class="image1" id="veenbes">
+								<img class="veen" src="images/Veenbes.png" alt="veenbes" />
+							</div>
+
+							<div class="text1">
+								<h1 class="spanfont" id="spanfont1">BLAASONTSTEKINGEN MOE?</h1>
+								<h1 class="spanfont" id="spanfont2">
+									BLAAS- <br />
+									ONTSTEKINGEN MOE?
+								</h1>
+								<h1 class="spanfont">
+									<span class="redtext">veenbes</span> <br />
+									TO THE RESCUE!
+								</h1>
+								<p>Iedere plant voegt iets waardevols toe</p>
+							</div>
+						</div>
 					</div>
 
-					<div class="text1">
-						<h1 class="spanfont" id="spanfont1">BLAASONTSTEKINGEN MOE?</h1>
-						<h1 class="spanfont" id="spanfont2">
-							BLAAS- <br />
-							ONTSTEKINGEN MOE?
-						</h1>
-						<h1 class="spanfont">
-							<span class="redtext">veenbes</span> <br />
-							TO THE RESCUE!
-						</h1>
-						<p>Iedere plant voegt iets waardevols toe</p>
-					</div> 
-				</div> -->
-				<div class="intro1">
-					<div class="image1" id="aloevera">
-						<img class="veen" src="images/aloevera.png" alt="aloë vera" />
-					</div>
+					<div class="mySlides fade">
+						<div class="numbertext">3 / 3</div>
+						<div class="intro1">
+							<div class="image1" id="aloevera">
+								<img class="veen" src="images/aloevera.png" alt="aloë vera" />
+							</div>
 
-					<div class="text1">
-						<h1 class="spanfont" id="spanfont1">VERBRAND?</h1>
-						<h1 class="spanfont" id="spanfont2">VERBRAND?</h1>
-						<h1 class="spanfont">
-							<span class="veratext">aloë vera</span> <br />
-							PLUS VERBAND!
-						</h1>
-						<p>Iedere plant voegt iets waardevols toe</p>
+							<div class="text1">
+								<h1 class="spanfont" id="spanfont1">VERBRAND?</h1>
+								<h1 class="spanfont" id="spanfont2">VERBRAND?</h1>
+								<h1 class="spanfont">
+									<span class="veratext">aloë vera</span> <br />
+									PLUS VERBAND!
+								</h1>
+								<p>Iedere plant voegt iets waardevols toe</p>
+							</div>
+						</div>
 					</div>
 				</div>
+				<br />
+
+				<div style="text-align: center">
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+				</div>
+
 				<div class="intro">
 					<div class="text">
 						<h1 id="title">PLANTBEWUST</h1>
@@ -138,5 +162,30 @@
 				</div>
 			</div>
 		</div>
+		<script src="main.js"></script>
+
+		<script>
+			let slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				let dots = document.getElementsByClassName("dot");
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {
+					slideIndex = 1;
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex - 1].style.display = "block";
+				dots[slideIndex - 1].className += " active";
+				setTimeout(showSlides, 5000); // Change image every 2 seconds
+			}
+		</script>
 	</body>
 </html>
