@@ -725,16 +725,6 @@ input {
 	width: 100px;
 }
 
-.success {
-	background-color: #9fd2a1;
-	padding: 5px 10px;
-	color: #326b07;
-	text-align: center;
-	border-radius: 3px;
-	font-size: 14px;
-	margin-top: 10px;
-}
-
 @media (max-width: 768px) {
 	.verslag {
 		flex-direction: column;
@@ -749,11 +739,15 @@ input {
 
 .carousel {
 	position: relative;
+	height: 620px;
 }
 
 .carousel__item {
-	height: 300px;
-	background-color: gray;
+	padding: 1em;
+	font-family: "Quicksand", sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+	color: #ffffff;
 	display: none;
 }
 
@@ -774,11 +768,12 @@ input {
 	width: 10px;
 	height: 10px;
 	display: inline-block;
-	background: rgba(255, 255, 255, 0.2);
+	background: rgba(0, 0, 0, 1);
 	border-radius: 50%;
+	margin: 0 5px;
 	cursor: pointer;
 }
 
 .carousel__button--selected {
-	background: rgba(255, 255, 255, 0.5);
+	background: rgba(28, 99, 42, 1);
 }
