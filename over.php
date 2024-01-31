@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Over Ons</title>
-		<link rel="icon" type="image/x-icon" href="images/favicon.png" />
-		<link rel="stylesheet" href="css/normalize.css" />
-		<link rel="stylesheet" href="css/base-layout.css" />
-		<link rel="stylesheet" href="css/nav.css" />
-		<link rel="stylesheet" href="css/typo.css" />
-		<link rel="stylesheet" href="css/buttons.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-		/>
-	</head>
-	<body>
-		<div class="outer-wrapper">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<?php
+if(!empty($_POST["send"])) {
+	$name = $_POST["name"];
+    $mail = $_POST["emailAdres"];
+	$toEmail = "gmeechel@gmail.com";
+  
+	$mailHeaders = "Name: " . $name .
+	"\r\n Email: ". $mail  ."\r\n";
+}
+?>
+
+<div class="outer-wrapper">
 			<div class="wrapper">
 				<header>
 					<div class="logo">
@@ -224,8 +226,8 @@
 					<div class="text">
 						<span id="ledenjump"><h2>Belangrijke figuren</h2></span>
 					</div>
-					<div class="persons">
-						<div class="person" id="lid1">
+					<div class="persons" id="lid1">
+						<div class="person">
 							<h2 class="quote">
 								"PLANTEN ZIJN GEEN DECORATIE, MAAR DE LEVENSADER VAN ONZE
 								PLANEET."
@@ -274,15 +276,9 @@
 				<form>
 					<input type="text" placeholder="Naam" name="name" required />
 					<input type="text" placeholder="Email adres" name="mail" required />
-					<input
-						id="sendButton"
-						class="btn-primary"
-						type="submit"
-						name="send"
-						value="verstuur"
-					/>
+					<input class="verstuur" type="submit" name="send" value="verstuur" />
 				</form>
 			</div>
 		</footer>
-	</body>
+</body>
 </html>

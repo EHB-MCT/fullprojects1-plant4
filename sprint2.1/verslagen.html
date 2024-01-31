@@ -155,9 +155,17 @@
 		<footer>
 			<div class="einde">
 				<h3>Blijf op de hoogte:</h3>
-				<input type="text" placeholder="Naam" name="name" required />
-				<input type="text" placeholder="Email adres" name="mail" required />
-				<input class="verstuur" type="submit" value="verstuur" />
+				<form>
+					<input type="text" placeholder="Naam" name="name" required />
+					<input type="text" placeholder="Email adres" name="mail" required />
+					<input
+						id="sendButton"
+						class="btn-primary"
+						type="submit"
+						name="send"
+						value="verstuur"
+					/>
+				</form>
 			</div>
 		</footer>
 	</body>
