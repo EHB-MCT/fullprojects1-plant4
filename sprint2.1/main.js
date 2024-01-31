@@ -19,11 +19,17 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
 		button.addEventListener("click", () => {
 			//unselect all items
 			items.forEach((item) =>
-				item.classList.remove("carousel__item--selected")
+				items.classList.remove("carousel__item--selected")
 			);
-			buttonsHtml.forEach((button) =>
-				button.classList.remove("carousel__buton--selected")
+			buttons.forEach((button) =>
+				buttons.classList.remove("carousel__button--selected")
 			);
+
+			items[i].classList.add("carousel__item--selected");
+			button.classList.add("carousel__button--selected");
 		});
 	});
+	// select the first item o page load
+	items[0].classList.add("carousel__item--selected");
+	buttons[0].classList.add("carousel__button--selected");
 });
