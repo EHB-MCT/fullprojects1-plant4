@@ -746,43 +746,81 @@ input {
 	}
 }
 
-.carousel {
-	position: relative;
-	height: 620px;
+* {
+	box-sizing: border-box;
 }
-
-.carousel__item {
-	padding: 1em;
-	font-family: "Quicksand", sans-serif;
-	font-weight: bold;
-	font-size: 2em;
-	color: #ffffff;
+body {
+	font-family: Verdana, sans-serif;
+}
+.mySlides {
 	display: none;
 }
-
-.carousel__item--selected {
-	display: block;
+img {
+	vertical-align: middle;
 }
 
-.carousel__nav {
-	width: 100%;
-	padding: 20px 0;
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+/* Caption text */
+.slideshow-container .text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
 	position: absolute;
-	bottom: 0;
-	left: 0;
+	bottom: 8px;
+	width: 100%;
 	text-align: center;
 }
 
-.carousel__button {
-	width: 10px;
-	height: 10px;
-	display: inline-block;
-	background: rgba(0, 0, 0, 1);
-	border-radius: 50%;
-	margin: 0 5px;
-	cursor: pointer;
+/* Number text (1/3 etc) */
+.slideshow-container .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
 }
 
-.carousel__button--selected {
-	background: rgba(28, 99, 42, 1);
+/* The dots/bullets/indicators */
+.slideshow-container .dot {
+	display: none;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active {
+	background-color: #717171;
+	display: none;
+}
+
+/* Fading animation */
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+	.text {
+		font-size: 11px;
+	}
 }
