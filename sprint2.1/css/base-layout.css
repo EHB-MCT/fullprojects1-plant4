@@ -738,3 +738,39 @@ input {
 		width: 100%;
 	}
 }
+
+.carousel {
+	position: relative;
+}
+
+.carousel__item {
+	height: 300px;
+	background-color: gray;
+	display: none;
+}
+
+.carousel__item--selected {
+	display: block;
+}
+
+.carousel__nav {
+	width: 100%;
+	padding: 20px 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
+
+.carousel__button {
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.carousel__button--selected {
+	background: rgba(255, 255, 255, 0.5);
+}
