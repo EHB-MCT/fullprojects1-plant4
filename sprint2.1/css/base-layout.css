@@ -581,6 +581,10 @@ html {
 /* OVER ONS -- DE GROEP */
 .ledenlijst {
 	margin-top: 100px;
+	background-image: url(../images/leden.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 .ledenlijst .person {
 	margin-top: 30px;
@@ -611,9 +615,13 @@ html {
 	margin-left: 35%;
 }
 @media (max-width: 1200px) {
+	.ledenlijst {
+		background-image: none;
+	}
 	.ledenlijst .person {
 		margin-top: 30px;
 		width: 50%;
+		background-image: none;
 	}
 	#lid1,
 	#lid3,
