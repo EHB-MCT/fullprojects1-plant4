@@ -12,6 +12,9 @@
 	text-decoration: none;
 	display: inline-block;
 }
+.btn-primary:hover {
+	background-color: #123d1a;
+}
 
 .btn-secondary {
 	font-family: "forma-djr-text", sans-serif;

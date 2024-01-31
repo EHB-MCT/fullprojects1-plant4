@@ -47,7 +47,10 @@ nav a.icon {
 	color: #1c632a;
 }
 
-nav a:hover {
+nav a:hover,
+#moreInfo:hover {
+	color: #123d1a;
+	text-decoration: underline;
 }
 
 @media screen and (max-width: 767px) {

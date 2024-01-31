@@ -558,6 +558,11 @@ nav {
 	font-size: 20px;
 	font-weight: 700;
 }
+.jump a:hover {
+	color: #123d1a;
+	text-decoration: underline;
+}
+
 .extraNav {
 	display: flex;
 	justify-content: center;
