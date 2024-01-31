@@ -13,7 +13,7 @@ nav #myLinks {
 }
 
 /* Style navigation menu links */
-nav .hamburger a {
+nav .hamburgerNav a {
 	font-family: "forma-djr-text", sans-serif;
 	font-weight: 700;
 	font-style: normal;
@@ -25,7 +25,7 @@ nav .hamburger a {
 	display: block;
 	position: relative;
 }
-.gewonenav a {
+.normalNav a {
 	font-family: "forma-djr-text", sans-serif;
 	font-weight: 700;
 	font-style: normal;
@@ -47,17 +47,16 @@ nav a.icon {
 	color: #1c632a;
 }
 
-/* Add a grey background color on mouse-over */
 nav a:hover {
 }
 
 @media screen and (max-width: 767px) {
-	.gewonenav {
+	.normalNav {
 		display: none;
 	}
 }
 @media screen and (min-width: 768px) {
-	.hamburger {
+	.hamburgerNav {
 		display: none;
 	}
 	header {

@@ -33,7 +33,7 @@ header .logo a {
 nav {
 	z-index: 80;
 }
-.hamburger {
+.hamburgerNav {
 	z-index: 91;
 }
 
@@ -63,17 +63,17 @@ nav {
 	flex: 1;
 }
 
-.intro1 {
+.fact {
 	display: flex;
 	justify-content: center;
 	margin-top: 20px;
 }
 
-.intro1 h1 {
+.fact h1 {
 	margin-bottom: 0px;
 }
 
-.intro1 p {
+.fact p {
 	margin-top: -10px;
 	margin-left: 0px;
 }
@@ -81,7 +81,7 @@ nav {
 .break {
 	margin-left: 50px;
 }
-.intro1 .image1 {
+.fact .factImage {
 	flex: 1;
 	background-image: url(../images/citroengras.png);
 	background-size: 85%;
@@ -90,7 +90,7 @@ nav {
 	display: flex;
 	align-items: center;
 }
-.intro1 #veenbes {
+.fact #veenbes {
 	flex: 1;
 	background-image: url(../images/Veenbes.png);
 	background-size: 85%;
@@ -99,7 +99,7 @@ nav {
 	display: flex;
 	align-items: center;
 }
-.intro1 #aloevera {
+.fact #aloevera {
 	flex: 1;
 	background-image: url(../images/aloevera.png);
 	background-size: 55%;
@@ -108,15 +108,15 @@ nav {
 	display: flex;
 	align-items: center;
 }
-.intro1 #aloevera.image1 img {
+.fact #aloevera.factImage img {
 	width: 80%;
 }
 
-.intro1 .image1 img {
+.fact .factImage img {
 	width: 90%;
 	margin-left: 50px;
 }
-.intro1 .text1 {
+.fact .factText {
 	flex: 1;
 	line-height: 60px;
 	text-align: left;
@@ -127,18 +127,15 @@ nav {
 }
 
 /* HOME PAGE --> IMAGE COREVALUES*/
-.corevalues {
+.coreInfo {
 	margin-top: 30px;
 	display: flex;
 	justify-content: center;
 }
-.corevalues img {
+.coreInfo img {
 	width: 100%;
 	margin-top: 70px;
 	margin-bottom: 40px;
-}
-.veen2 {
-	width: 80%;
 }
 
 /* HOME PAGE --> RESPONSIVE DESIGN*/
@@ -146,49 +143,45 @@ nav {
 	.wrapper {
 		width: 1200px;
 	}
-	.veen {
+	.factImg {
 		display: none;
 	}
 }
 @media (max-width: 1200px) {
-	.intro1 .image1 {
+	.fact .factImage {
 		background-image: none;
 	}
-	.intro1 #veenbes.image1 {
+	.fact #veenbes.factImage {
 		background-image: none;
 	}
-	.intro1 #aloevera.image1 {
+	.fact #aloevera.factImage {
 		background-image: none;
 		justify-content: center;
 	}
 
-	.intro1 #aloevera.image1 img {
+	.fact #aloevera.factImage img {
 		width: 60%;
 	}
 
-	.intro1 .image1 img {
+	.fact .factImage img {
 		width: 100%;
 		margin-left: 0px;
 	}
 }
 @media (max-width: 1000px) {
-	.veen {
+	.factImg {
 		display: none;
 	}
-	.text1 .veen2 {
-		display: flex;
-		flex-direction: column;
-	}
-	.intro1 .image1 {
+	.fact .factImage {
 		display: none;
 	}
-	.intro1 #veenbes.image1 {
+	.fact #veenbes.factImage {
 		display: none;
 	}
-	.intro1 #aloevera.image1 {
+	.fact #aloevera.factImage {
 		display: none;
 	}
-	.intro1 .text1 {
+	.fact .factText {
 		flex: 1;
 		line-height: 60px;
 		text-align: left;
@@ -202,28 +195,23 @@ nav {
 		height: auto;
 	}
 }
-@media (min-width: 1001px) {
-	.veen2 {
-		display: none;
-	}
-}
 
 @media (max-width: 768px) {
-	.intro1 {
+	.fact {
 		display: flex;
 		margin-left: 0px;
 	}
-	.intro1 .image1 {
+	.fact .factImage {
 		display: none;
 	}
 
-	.intro1 .text1 H1,
-	.intro1 .text1 p {
+	.fact .factText H1,
+	.fact .factText p {
 		margin-left: 0px;
 		text-align: left;
 	}
 
-	.text1 {
+	.factText {
 		justify-content: flex-start;
 	}
 
@@ -231,10 +219,10 @@ nav {
 		margin-top: 0px;
 	}
 
-	.hamburger .myLinks {
+	.hamburgerNav .myLinks {
 		z-index: 91;
 	}
-	.intro1 p {
+	.fact p {
 		padding-bottom: 0;
 	}
 
@@ -249,7 +237,7 @@ nav {
 	}
 }
 @media (max-width: 650px) {
-	#spanfont1 {
+	#bigTitle {
 		display: none;
 	}
 	#title {
@@ -260,7 +248,7 @@ nav {
 	}
 }
 @media (min-width: 651px) {
-	#spanfont2 {
+	#smallTitle {
 		display: none;
 	}
 	#title2 {
@@ -270,8 +258,8 @@ nav {
 
 /* OVER ONS */
 
-.organisatie,
-.kernwaarden .item {
+.organisation,
+.corevalues .item {
 	margin-top: 30px;
 	display: flex;
 	flex-direction: row;
@@ -279,54 +267,54 @@ nav {
 	justify-content: space-between;
 }
 
-.organisatie img {
+.organisation img {
 	width: 70%;
 }
 
-.organisatie h2 {
+.organisation h2 {
 	margin-bottom: 5px;
 }
-.kernwaarden img {
+.corevalues img {
 	width: 80%;
 }
 
-.organisatie .text,
-.kernwaarden .text {
+.organisation .text,
+.corevalues .text {
 	flex: 1;
 	text-align: left;
 }
 
-.organisatie .image,
-.kernwaarden .image {
+.organisation .image,
+.corevalues .image {
 	flex: 1;
 	display: flex;
 	justify-content: flex-end;
 }
 
-.organisatie .text {
+.organisation .text {
 	align-self: flex-start;
 	margin-top: 110px;
 }
 
-.kernwaarden h3 {
+.corevalues h3 {
 	margin-bottom: 0px;
 }
 
-.kernwaarden h2 {
+.corevalues h2 {
 	margin-bottom: -145px;
 }
 
-.kernwaarden p {
+.corevalues p {
 	margin-top: 5px;
 }
 
-.kernwaarden .image2 {
+.corevalues .image2 {
 	flex: 1;
 	display: flex;
 	justify-content: flex-start;
 }
 
-.kernwaarden .klimop {
+.corevalues .klimop {
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
@@ -336,7 +324,7 @@ nav {
 	background-repeat: no-repeat;
 }
 
-.kernwaarden .text2 {
+.corevalues .text2 {
 	margin-top: 400px;
 }
 
@@ -344,15 +332,12 @@ nav {
 	width: 50%;
 }
 
-.kernwaarden .item2 {
+.corevalues .item2 {
 	margin-top: -40px;
 }
 
-.klein img {
-	width: 100%;
-}
 @media (max-width: 1200px) {
-	.kernwaarden h2 {
+	.corevalues h2 {
 		margin-bottom: -50px;
 	}
 }
@@ -363,16 +348,16 @@ nav {
 	}
 }
 @media (max-width: 768px) {
-	.organisatie {
+	.organisation {
 		flex-direction: column;
 	}
-	.organisatie .image {
+	.organisation .image {
 		justify-content: center;
 	}
-	.organisatie img {
+	.organisation img {
 		width: 50%;
 	}
-	.organisatie .text {
+	.organisation .text {
 		margin-top: 10px;
 	}
 }
@@ -380,13 +365,13 @@ nav {
 	.item {
 		flex-direction: column;
 	}
-	.kernwaarden img {
+	.corevalues img {
 		width: 50%;
 	}
-	.kernwaarden .item {
+	.corevalues .item {
 		flex-direction: column;
 	}
-	.kernwaarden .item2 {
+	.corevalues .item2 {
 		margin-top: 0px;
 		justify-content: center;
 	}
@@ -396,14 +381,14 @@ nav {
 	.klokjegroot {
 		display: none;
 	}
-	.kernwaarden .image2 {
+	.corevalues .image2 {
 		justify-content: center;
 		margin-top: 0px;
 	}
-	.kernwaarden .klimop {
+	.corevalues .klimop {
 		background-image: none;
 	}
-	.kernwaarden .text2 {
+	.corevalues .text2 {
 		margin-top: 0px;
 	}
 	.image3 {
@@ -414,24 +399,24 @@ nav {
 		width: 80%;
 		margin-left: -40px;
 	}
-	#emphatie {
+	#empathie {
 		margin-top: 0;
 	}
-	.kernwaarden h2 {
+	.corevalues h2 {
 		margin-top: 130px;
 		margin-bottom: 0;
 	}
-	.organisatie {
+	.organisation {
 		margin-top: 0;
 	}
 }
 @media (max-width: 768px) {
-	.bullshit2 .jump {
+	.extraNav .jump {
 		display: none;
 	}
 }
 @media (max-width: 500px) {
-	.kernwaarden img {
+	.corevalues img {
 		width: 80%;
 	}
 }
@@ -459,7 +444,7 @@ nav {
 .row2 img {
 	width: 95%;
 }
-.bullshit {
+.frameImg {
 	height: fit-content;
 }
 .row1 {
@@ -557,7 +542,7 @@ nav {
 	margin-bottom: 10px;
 }
 
-.center {
+.readMore {
 	text-align: center;
 }
 
@@ -573,7 +558,7 @@ nav {
 	font-size: 20px;
 	font-weight: 700;
 }
-.bullshit2 {
+.extraNav {
 	display: flex;
 	justify-content: center;
 	margin-top: 10px;
@@ -588,27 +573,27 @@ html {
 }
 
 /* OVER ONS -- DE GROEP */
-.ledenlijst {
+.keyfigures {
 	margin-top: 100px;
 	background-image: url(../images/leden.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
-.ledenlijst .person {
+.keyfigures .person {
 	margin-top: 30px;
 	width: 30%;
 }
-.ledenlijst .quote {
+.keyfigures .quote {
 	font-size: 30px;
 	margin: 0;
 }
-.ledenlijst .name {
+.keyfigures .name {
 	font-size: 30px;
 	margin: 0;
 	margin-top: 10px;
 }
-.ledenlijst .work {
+.keyfigures .work {
 	margin: 0;
 }
 #lid1 {
@@ -624,10 +609,10 @@ html {
 	margin-left: 35%;
 }
 @media (max-width: 1200px) {
-	.ledenlijst {
+	.keyfigures {
 		background-image: none;
 	}
-	.ledenlijst .person {
+	.keyfigures .person {
 		margin-top: 30px;
 		width: 50%;
 		background-image: none;
@@ -644,12 +629,12 @@ html {
 	}
 }
 @media (max-width: 1000px) {
-	.ledenlijst {
+	.keyfigures {
 		margin-top: 40px;
 	}
 }
 @media (max-width: 700px) {
-	.ledenlijst .person {
+	.keyfigures .person {
 		margin-top: 60px;
 		width: 80%;
 	}
@@ -665,25 +650,25 @@ html {
 	}
 }
 
-.intro-verslag {
+.news {
 	width: 50%;
 	flex: 1;
 }
-.bloem {
+.newsImg {
 	flex: 1;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
-.intro-verslag h2 {
+.news h2 {
 	margin-bottom: 0;
 	margin-top: 70px;
 }
-.bloem img {
+.newsImg img {
 	width: 80%;
 }
 
-.verslag {
+.newsWrapper {
 	margin-top: 30px;
 	display: flex;
 	justify-content: space-between;
@@ -693,7 +678,7 @@ footer {
 	margin-top: 50px;
 }
 
-footer .einde {
+footer .contact {
 	display: flex;
 	padding: 20px;
 	margin-top: 20px;
@@ -701,7 +686,7 @@ footer .einde {
 	flex-direction: column;
 }
 
-.einde {
+.contact {
 	align-items: center;
 }
 
@@ -735,13 +720,13 @@ input {
 }
 
 @media (max-width: 768px) {
-	.verslag {
+	.newsWrapper {
 		flex-direction: column;
 	}
-	.bloem {
+	.newsImg {
 		display: none;
 	}
-	.intro-verslag {
+	.news {
 		width: 100%;
 	}
 }
@@ -795,7 +780,6 @@ img {
 	margin: 0 2px;
 	background-color: #bbb;
 	border-radius: 50%;
-	display: inline-block;
 	transition: background-color 0.6s ease;
 }
 

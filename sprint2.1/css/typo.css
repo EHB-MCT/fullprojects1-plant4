@@ -1,7 +1,4 @@
 @import url("https://use.typekit.net/zkt1fja.css");
-@import url("https://use.typekit.net/zkt1fja.css");
-@import url("https://use.typekit.net/zkt1fja.css");
-@import url("https://use.typekit.net/zkt1fja.css");
 @import url("https://use.typekit.net/lxo0svz.css");
 
 h1 {
@@ -76,14 +73,14 @@ ul {
 	font-family: "expo-serif-pro", serif;
 }
 
-.spanfont {
+.factTitle {
 	font-family: "forma-djr-text", sans-serif;
 	font-weight: 600;
 	font-size: 40pt;
 	line-height: 55px;
 }
 
-.greentext {
+.lemonStyle {
 	font-family: "expo-serif-pro", serif;
 	color: #366330;
 	font-weight: 700;
@@ -91,7 +88,7 @@ ul {
 	margin-top: 0px;
 	line-height: 20px;
 }
-.redtext {
+.cranberryStyle {
 	font-family: "expo-serif-pro", serif;
 	color: #941619;
 	font-weight: 700;
@@ -99,7 +96,7 @@ ul {
 	margin-top: 0px;
 	line-height: 20px;
 }
-.veratext {
+.aloeStyle {
 	font-family: "expo-serif-pro", serif;
 	color: #54873e;
 	font-weight: 700;
@@ -118,6 +115,6 @@ input[type="text"] {
 	font-family: "forma-djr-text", sans-serif;
 	color: #000;
 }
-h1.spanfont {
+h1.factTitle {
 	margin-top: 0;
 }
