@@ -636,7 +636,15 @@ html {
 }
 #lid4 {
 }
+@media (min-width: 1201px) {
+	#mobile {
+		display: none;
+	}
+}
 @media (max-width: 1200px) {
+	#desktop {
+		display: none;
+	}
 	.keyfigures {
 		background-image: none;
 	}
