@@ -672,17 +672,13 @@ html {
 .keyfigures .work {
 	margin: 0;
 }
-#lid1 {
-	margin-left: 0%;
-}
 #lid2 {
 	margin-left: 5%;
 }
 #lid3 {
 	margin-right: 5%;
 }
-#lid4 {
-}
+
 @media (min-width: 1201px) {
 	#mobile {
 		display: none;
@@ -694,6 +690,7 @@ html {
 	}
 	.keyfigures {
 		background-image: none;
+		margin-left: 0px;
 	}
 	.keyfigures .person {
 		margin-top: 30px;
@@ -719,7 +716,7 @@ html {
 @media (max-width: 700px) {
 	.keyfigures .person {
 		margin-top: 60px;
-		width: 80%;
+		width: 90%;
 	}
 	#lid1,
 	#lid3,
@@ -729,7 +726,7 @@ html {
 	#lid2,
 	#lid4 {
 		text-align: right;
-		margin-left: 20%;
+		margin-left: 10%;
 	}
 }
 
