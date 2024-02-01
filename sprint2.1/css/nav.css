@@ -20,7 +20,7 @@ nav .hamburgerNav a {
 	font-size: 12pt;
 	color: #000000;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 25px 16px;
 	text-decoration: none;
 	display: block;
 	position: relative;
@@ -45,6 +45,7 @@ nav a.icon {
 
 #onpage {
 	color: #1c632a;
+	text-decoration: underline;
 }
 
 nav a:hover,

@@ -42,6 +42,7 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: -120px;
 }
 .intro p {
 	margin-top: 8px;
@@ -128,13 +129,17 @@ nav {
 
 /* HOME PAGE --> IMAGE COREVALUES*/
 .coreInfo {
-	margin-top: 30px;
 	display: flex;
 	justify-content: center;
 }
+.coreInfo a.jumplink {
+	display: flex;
+	justify-content: center;
+}
+
 .coreInfo img {
-	width: 100%;
-	margin-top: 70px;
+	width: 80%;
+	margin-top: 30px;
 	margin-bottom: 40px;
 }
 
@@ -194,6 +199,9 @@ nav {
 	.wrapper .carousel {
 		height: auto;
 	}
+	.intro {
+		margin-top: -50px;
+	}
 }
 
 @media (max-width: 768px) {
@@ -213,10 +221,6 @@ nav {
 
 	.factText {
 		justify-content: flex-start;
-	}
-
-	.intro {
-		margin-top: 0px;
 	}
 
 	.hamburgerNav .myLinks {
@@ -360,6 +364,9 @@ nav {
 	.organisation .text {
 		margin-top: 10px;
 	}
+	.wrapper .corevalues h2 {
+		margin-top: 50px;
+	}
 }
 @media (max-width: 1000px) {
 	.item {
@@ -409,6 +416,9 @@ nav {
 	.organisation {
 		margin-top: 0;
 	}
+	span#ledenjump h2 {
+		margin-bottom: 0;
+	}
 }
 @media (max-width: 768px) {
 	.extraNav .jump {
@@ -418,6 +428,9 @@ nav {
 @media (max-width: 500px) {
 	.corevalues img {
 		width: 80%;
+	}
+	span#ledenjump h2 {
+		margin-bottom: -s;
 	}
 }
 
@@ -716,7 +729,7 @@ footer {
 
 footer .contact {
 	display: flex;
-	padding: 20px;
+	padding: 40px;
 	margin-top: 20px;
 	background-color: #dbc3a9;
 	flex-direction: column;
