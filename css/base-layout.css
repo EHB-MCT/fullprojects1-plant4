@@ -716,7 +716,7 @@ html {
 @media (max-width: 700px) {
 	.keyfigures .person {
 		margin-top: 60px;
-		width: 80%;
+		width: 90%;
 	}
 	#lid1,
 	#lid3,
@@ -726,7 +726,7 @@ html {
 	#lid2,
 	#lid4 {
 		text-align: right;
-		margin-left: 20%;
+		margin-left: 10%;
 	}
 }
 
