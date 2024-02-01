@@ -501,6 +501,40 @@ nav {
 	}
 }
 
+@media (min-width: 461px) {
+	#phoneTitle {
+		display: none;
+	}
+}
+
+@media (max-width: 460px) {
+	#deskTitle {
+		display: none;
+	}
+	#phoneTitle {
+		line-height: 45px;
+	}
+	.row1 .text h2 {
+		line-height: 45px;
+	}
+}
+@media (min-width: 521px) {
+	.phoneTitle {
+		display: none;
+	}
+}
+@media (max-width: 520px) {
+	.deskTitle {
+		display: none;
+	}
+	.phoneTitle {
+		line-height: 45px;
+	}
+	.row1 .text h2 {
+		line-height: 45px;
+	}
+}
+
 /* VERSLAGEN*/
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
@@ -848,7 +882,7 @@ span.dot.active::after {
 
 @keyframes fade {
 	from {
-		opacity: 0.4;
+		opacity: 0;
 	}
 	to {
 		opacity: 1;
