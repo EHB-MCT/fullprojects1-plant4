@@ -80,6 +80,10 @@ ul {
 	font-size: 40pt;
 	line-height: 55px;
 }
+.factText p {
+	line-height: 20px;
+	margin-top: 10px;
+}
 
 .lemonStyle {
 	font-family: "expo-serif-pro", serif;

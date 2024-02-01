@@ -240,6 +240,21 @@ nav {
 		display: none;
 	}
 }
+@media (max-width: 430px) {
+	.factText h1 {
+		font-size: 30pt;
+		line-height: 40px;
+	}
+	.factText .cranberryStyle {
+		font-size: 40pt;
+		line-height: 30px;
+	}
+	.factText .aloeStyle,
+	.factText .lemonStyle {
+		font-size: 40pt;
+		line-height: 40px;
+	}
+}
 @media (max-width: 650px) {
 	#bigTitle {
 		display: none;
